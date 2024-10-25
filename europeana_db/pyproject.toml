@@ -1,0 +1,28 @@
+[tool.poetry]
+package-mode = false
+name = "europeana-db"
+version = "0.1.0"
+description = ""
+authors = ["Vagner Inácio <vagner.inol@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.0.1"
+requests = "^2.32.3"
+tqdm = "^4.66.5"
+pillow = "^11.0.0"
+pycountry = "^24.6.1"
+deep-translator = "^1.11.4"
+debugpy = "^1.8.7"
+lingua-language-detector = "^2.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+in-project = true
+
+
