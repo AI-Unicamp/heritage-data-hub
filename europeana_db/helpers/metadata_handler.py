@@ -1,84 +1,70 @@
-import csv
-import json
 import os
-from os.path import join
+import json
+from helpers.constants import LOG_FILE, JSON_DIR, CACHE_FILE
 
 
-def save_metadata(items, valid_items_count, csv_filename, metadata_dir):
-    """Append valid metadata to a CSV file."""
-    csv_path = join(metadata_dir, csv_filename)
-    file_exists = os.path.isfile(csv_path)
-
-    with open(csv_path, mode="a", newline="", encoding="utf-8") as file:
-        writer = csv.DictWriter(
-            file,
-            fieldnames=[
-                "id",
-                "title",  # Translated title
-                "original_title",  # Original title
-                "original_title_language_alpha_2",  # Language code for the original title
-                "image_url",
-                "english_description",  # Translated description
-                "original_description",  # Original description
-                "original_description_language_alpha_2",  # Language code for the original description
-            ],
-        )
-
-        # Write the header only if the file does not exist
-        if not file_exists:
-            writer.writeheader()
-
-        # Filter only the expected fields to avoid extra fields error
-        for item in items[:valid_items_count]:
-            filtered_item = {
-                "id": item.get("id", "N/A"),
-                "title": item.get("title", "No title available"),
-                "original_title": item.get(
-                    "original_title", "No original title available"
-                ),
-                "original_title_language_alpha_2": item.get(
-                    "original_title_language_alpha_2", "N/A"
-                ),
-                "image_url": item.get("image_url", "N/A"),
-                "english_description": item.get(
-                    "english_description", "No description available"
-                ),
-                "original_description": item.get(
-                    "original_description", "No original description available"
-                ),
-                "original_description_language_alpha_2": item.get(
-                    "original_description_language_alpha_2", "N/A"
-                ),
-            }
-            writer.writerow(filtered_item)
+def load_existing_ids():
+    """Load existing item IDs from the log file."""
+    if os.path.exists(LOG_FILE):
+        with open(LOG_FILE, "r", encoding="utf-8") as f:
+            return set(line.strip() for line in f.readlines())
+    return set()
 
 
-def save_skipped_metadata(items, skipped_items_count, csv_filename, metadata_dir):
-    """Append skipped metadata to the skipped CSV file."""
-    csv_path = join(metadata_dir, csv_filename)
-    file_exists = os.path.isfile(csv_path)
+def save_ids_log(new_ids, is_precheck=False):
+    """Save new item IDs to the log file."""
+    existing_ids = load_existing_ids()
+    new_ids_to_add = [item_id for item_id in new_ids if item_id not in existing_ids]
 
-    with open(csv_path, mode="a", newline="", encoding="utf-8") as file:
-        writer = csv.DictWriter(
-            file, fieldnames=["id", "title", "image_url", "description"]
-        )
+    if new_ids_to_add:
+        with open(LOG_FILE, "a", encoding="utf-8") as f:
+            for item_id in new_ids_to_add:
+                f.write(f"{item_id}\n")
 
-        # Write the header only if the file does not exist
-        if not file_exists:
-            writer.writeheader()
+        if not is_precheck:  # Only print when new items are added in a normal run
+            print(f"📝 Added {len(new_ids_to_add)} new item IDs to log.")
 
-        # Write only the skipped items
-        for item in items[:skipped_items_count]:
-            writer.writerow(item)
+    return len(new_ids_to_add)
 
 
-def save_json(item, item_id, json_dir):
-    """Save the full JSON of each item in the json_dir folder."""
-    safe_item_id = item_id.replace("/", "_")
-    json_filename = join(json_dir, f"{safe_item_id}.json")
+def save_metadata(item_id, data):
+    """Save metadata as a JSON file."""
+    safe_item_id = item_id.replace("/", "_") + ".json"
+    file_path = os.path.join(JSON_DIR, safe_item_id)
 
-    try:
-        with open(json_filename, "w", encoding="utf-8") as json_file:
-            json.dump(item, json_file, indent=4, ensure_ascii=False)
-    except Exception as e:
-        print(f"Failed to save JSON for item ID {safe_item_id}: {e}")
+    if os.path.exists(file_path):  # Prevent overwriting existing files
+        return None
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+
+    return file_path
+
+
+def count_total_downloaded():
+    """Count the total number of item IDs in the log file."""
+    if os.path.exists(LOG_FILE):
+        with open(LOG_FILE, "r", encoding="utf-8") as f:
+            return len(f.readlines())
+    return 0
+
+
+def load_cache():
+    """Load cache file to get the total downloaded count."""
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"downloaded_count": 0}
+
+
+def update_cache(new_files_count):
+    """Update the cache file with the new total count."""
+    cache = load_cache()
+    cache["downloaded_count"] += new_files_count  # Only update with NEW items
+
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, indent=4)
+
+    print(
+        f"💾 Cache updated: Total downloaded count is now {cache['downloaded_count']}."
+    )
