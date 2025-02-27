@@ -1,0 +1,1153 @@
+{
+    "apikey": "iaceddupboa",
+    "success": true,
+    "statsDuration": 202,
+    "requestNumber": 999,
+    "object": {
+        "about": "/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380",
+        "aggregations": [
+            {
+                "about": "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380",
+                "edmDataProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/4538"
+                    ]
+                },
+                "edmIsShownBy": "https://www.openbeelden.nl/files/12/15/1215622.1215384.WEEKNUMMER492-HRE000132CA_1651000_1783960.mp4",
+                "edmIsShownAt": "https://www.openbeelden.nl/media/1215380",
+                "edmObject": "https://www.openbeelden.nl/images/1220288/Wielerwedstrijden_op_de_weg_om_het_kampioenschap_van_Nederland_%281_06%29.png",
+                "edmProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/1607"
+                    ]
+                },
+                "edmRights": {
+                    "def": [
+                        "http://creativecommons.org/publicdomain/mark/1.0/"
+                    ]
+                },
+                "edmUgc": "false",
+                "aggregatedCHO": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380",
+                "webResources": [
+                    {
+                        "about": "https://www.openbeelden.nl/images/1220288/Wielerwedstrijden_op_de_weg_om_het_kampioenschap_van_Nederland_%281_06%29.png",
+                        "textAttributionSnippet": "(nl) Wielerwedstrijden op de weg om het kampioenschap van Nederland - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380. (nl) Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/1215380. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='nl'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380' target='_blank' rel='noopener'>Wielerwedstrijden op de weg om het kampioenschap van Nederland</a></dd><dt>Creator</dt><dd lang='nl'>Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/1215380' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "ebucoreHasMimeType": "image/png",
+                        "ebucoreFileByteSize": 82747,
+                        "ebucoreWidth": 360,
+                        "ebucoreHeight": 288,
+                        "edmHasColorSpace": "sRGB",
+                        "edmComponentColor": [
+                            "#696969",
+                            "#C0C0C0",
+                            "#D3D3D3",
+                            "#2F4F4F",
+                            "#556B2F",
+                            "#BDB76B"
+                        ],
+                        "ebucoreOrientation": "landscape"
+                    },
+                    {
+                        "about": "https://www.openbeelden.nl/files/12/15/1215622.1215384.WEEKNUMMER492-HRE000132CA_1651000_1783960.mp4",
+                        "textAttributionSnippet": "(nl) Wielerwedstrijden op de weg om het kampioenschap van Nederland - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380. (nl) Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/1215380. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='nl'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380' target='_blank' rel='noopener'>Wielerwedstrijden op de weg om het kampioenschap van Nederland</a></dd><dt>Creator</dt><dd lang='nl'>Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/1215380' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "dctermsIsReferencedBy": [
+                            "https://iiif.europeana.eu/presentation/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380/manifest"
+                        ],
+                        "edmCodecName": "h264",
+                        "ebucoreHasMimeType": "video/mp4",
+                        "ebucoreDuration": "133000",
+                        "ebucoreWidth": 720,
+                        "ebucoreHeight": 576,
+                        "ebucoreBitRate": 2019610,
+                        "ebucoreOrientation": "landscape",
+                        "ebucoreFrameRate": 25.0
+                    },
+                    {
+                        "about": "https://www.openbeelden.nl/media/1215380",
+                        "textAttributionSnippet": "(nl) Wielerwedstrijden op de weg om het kampioenschap van Nederland - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380. (nl) Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/1215380. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='nl'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380' target='_blank' rel='noopener'>Wielerwedstrijden op de weg om het kampioenschap van Nederland</a></dd><dt>Creator</dt><dd lang='nl'>Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/1215380' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "ebucoreHasMimeType": "application/xhtml+xml",
+                        "ebucoreFileByteSize": 0
+                    },
+                    {
+                        "about": "https://iiif.europeana.eu/presentation/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380/manifest",
+                        "rdfType": "http://iiif.io/api/presentation/3#Manifest"
+                    }
+                ],
+                "dqvHasQualityAnnotation": [
+                    {
+                        "created": "2025-02-17T11:45:09.808332701Z",
+                        "target": [
+                            "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380"
+                        ],
+                        "body": "http://www.europeana.eu/schemas/epf/contentTier4"
+                    },
+                    {
+                        "created": "2025-02-17T11:45:09.808346462Z",
+                        "target": [
+                            "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380"
+                        ],
+                        "body": "http://www.europeana.eu/schemas/epf/metadataTierC"
+                    }
+                ]
+            }
+        ],
+        "concepts": [
+            {
+                "about": "http://www.wikidata.org/entity/Q3609",
+                "prefLabel": {
+                    "de": [
+                        "Straßenradsport"
+                    ],
+                    "fi": [
+                        "maantiepyöräily"
+                    ],
+                    "ru": [
+                        "шоссейный велоспорт"
+                    ],
+                    "sv": [
+                        "landsvägscykling"
+                    ],
+                    "pt": [
+                        "ciclismo de estrada"
+                    ],
+                    "el": [
+                        "ποδηλασία δρόμου"
+                    ],
+                    "lt": [
+                        "dviračių plento lenktynės"
+                    ],
+                    "en": [
+                        "road bicycle racing"
+                    ],
+                    "lv": [
+                        "šosejas riteņbraukšana"
+                    ],
+                    "it": [
+                        "ciclismo su strada"
+                    ],
+                    "fr": [
+                        "cyclisme sur route"
+                    ],
+                    "hu": [
+                        "országútikerékpár-versenyzés"
+                    ],
+                    "es": [
+                        "ciclismo en ruta"
+                    ],
+                    "et": [
+                        "maanteesõit"
+                    ],
+                    "cs": [
+                        "silniční cyklistika"
+                    ],
+                    "eu": [
+                        "errepideko txirrindularitza"
+                    ],
+                    "sl": [
+                        "cestno kolesarstvo"
+                    ],
+                    "ga": [
+                        "rásaíocht rothar bóthair"
+                    ],
+                    "pl": [
+                        "kolarstwo szosowe"
+                    ],
+                    "da": [
+                        "landevejscykling"
+                    ],
+                    "ro": [
+                        "Ciclism rutier"
+                    ],
+                    "ca": [
+                        "ciclisme de carretera"
+                    ],
+                    "nl": [
+                        "wegwielrennen"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Radsportwettbewerbe auf Straßen"
+                    ],
+                    "sv": [
+                        "cykelsport"
+                    ],
+                    "fi": [
+                        "pyöräilylaji"
+                    ],
+                    "ru": [
+                        "вид спорта"
+                    ],
+                    "en": [
+                        "bicycle racing sport"
+                    ],
+                    "it": [
+                        "disciplina sportiva"
+                    ],
+                    "fr": [
+                        "sport de compétition"
+                    ],
+                    "es": [
+                        "tipo de ciclismo de competición"
+                    ],
+                    "et": [
+                        "jalgrattaspordi ala"
+                    ],
+                    "cs": [
+                        "disciplína sportovní cyklistiky"
+                    ],
+                    "pl": [
+                        "sport rowerowy lub rowerowa aktywność sportowa"
+                    ],
+                    "da": [
+                        "cykling på landevej"
+                    ],
+                    "nl": [
+                        "wielersport op de (openbare) weg"
+                    ],
+                    "ca": [
+                        "ciclisme de competició"
+                    ]
+                },
+                "broader": [
+                    "http://www.wikidata.org/entity/Q2215841",
+                    "http://www.wikidata.org/entity/Q3493900",
+                    "http://www.wikidata.org/entity/Q7339484",
+                    "http://www.wikidata.org/entity/Q2312410"
+                ],
+                "related": [
+                    "http://www.wikidata.org/entity/Q948482",
+                    "http://www.wikidata.org/entity/Q52217314"
+                ],
+                "exactMatch": [
+                    "https://www.freebase.com/m/05tfch",
+                    "https://g.co/kg/m/05tfch",
+                    "http://www.yso.fi/onto/yso/p10408",
+                    "http://babelnet.org/rdf/s00995461n",
+                    "http://cv.iptc.org/newscodes/mediatopic/20000905",
+                    "http://dbpedia.org/resource/Road_bicycle_racing"
+                ]
+            },
+            {
+                "about": "http://data.europeana.eu/concept/3054",
+                "prefLabel": {
+                    "de": [
+                        "Straßenradsport"
+                    ],
+                    "fi": [
+                        "Maantiepyöräily"
+                    ],
+                    "ru": [
+                        "Шоссейный велоспорт"
+                    ],
+                    "sv": [
+                        "Landsvägscykling"
+                    ],
+                    "pt": [
+                        "Ciclismo de estrada"
+                    ],
+                    "el": [
+                        "Ποδηλασία δρόμου"
+                    ],
+                    "lt": [
+                        "Dviračių plento lenktynės"
+                    ],
+                    "en": [
+                        "Road bicycle racing"
+                    ],
+                    "lv": [
+                        "Šosejas riteņbraukšana"
+                    ],
+                    "it": [
+                        "Ciclismo su strada"
+                    ],
+                    "fr": [
+                        "Cyclisme sur route"
+                    ],
+                    "hu": [
+                        "Országútikerékpár-versenyzés"
+                    ],
+                    "es": [
+                        "Ciclismo en ruta"
+                    ],
+                    "et": [
+                        "Maanteesõit"
+                    ],
+                    "cs": [
+                        "Silniční cyklistika"
+                    ],
+                    "eu": [
+                        "Errepideko txirrindularitza"
+                    ],
+                    "sl": [
+                        "Cestno kolesarstvo"
+                    ],
+                    "ga": [
+                        "Rásaíocht rothar bóthair"
+                    ],
+                    "pl": [
+                        "Kolarstwo szosowe"
+                    ],
+                    "da": [
+                        "Landevejscykling"
+                    ],
+                    "ro": [
+                        "Ciclism rutier"
+                    ],
+                    "ca": [
+                        "Ciclisme de carretera"
+                    ],
+                    "nl": [
+                        "Wegwielrennen"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Radsportwettbewerbe auf Straßen"
+                    ],
+                    "sv": [
+                        "Cykelsport"
+                    ],
+                    "fi": [
+                        "Pyöräilylaji"
+                    ],
+                    "ru": [
+                        "Вид спорта"
+                    ],
+                    "en": [
+                        "Bicycle racing sport"
+                    ],
+                    "it": [
+                        "Disciplina sportiva"
+                    ],
+                    "fr": [
+                        "Sport de compétition"
+                    ],
+                    "es": [
+                        "Tipo de ciclismo de competición"
+                    ],
+                    "et": [
+                        "Jalgrattaspordi ala"
+                    ],
+                    "cs": [
+                        "Disciplína sportovní cyklistiky"
+                    ],
+                    "pl": [
+                        "Sport rowerowy lub rowerowa aktywność sportowa"
+                    ],
+                    "da": [
+                        "Cykling på landevej"
+                    ],
+                    "nl": [
+                        "Wielersport op de (openbare) weg"
+                    ],
+                    "ca": [
+                        "Ciclisme de competició"
+                    ]
+                },
+                "broader": [
+                    "http://data.europeana.eu/concept/3001"
+                ],
+                "exactMatch": [
+                    "http://www.wikidata.org/entity/Q3609",
+                    "https://www.freebase.com/m/05tfch",
+                    "https://g.co/kg/m/05tfch",
+                    "http://www.yso.fi/onto/yso/p10408",
+                    "http://babelnet.org/rdf/s00995461n",
+                    "http://cv.iptc.org/newscodes/mediatopic/20000905",
+                    "http://dbpedia.org/resource/Road_bicycle_racing"
+                ]
+            },
+            {
+                "about": "http://vocab.getty.edu/aat/300263857",
+                "prefLabel": {
+                    "de": [
+                        "bewegtes Bild"
+                    ],
+                    "pt": [
+                        "imagens em movimento"
+                    ],
+                    "en": [
+                        "moving images"
+                    ],
+                    "es": [
+                        "imágenes en movimiento"
+                    ],
+                    "nl": [
+                        "bewegende beelden"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "bewegte Bilder"
+                    ],
+                    "pt": [
+                        "imagem em movimento"
+                    ],
+                    "en": [
+                        "moving image"
+                    ],
+                    "es": [
+                        "fotografía en movimiento",
+                        "imagen en movimiento"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Visuelles Werk, in der das Bild durch einen optischen Trick wie bewegt erscheint. Zu den Medien bewegter Bilder zählen Filme, Videoaufnahmen, Daumenkinos und einige optische Spielzeuge wie Zoetrope."
+                    ],
+                    "pt": [
+                        "Obras visuais nas quais a imagem, por meio de um truque óptico, parece estar em movimento. Os meios para imagens em movimento incluem ilustrações em movimento, gravações em vídeo e alguns brinquedos ópticos como zootrópios."
+                    ],
+                    "en": [
+                        "Visual works in which the image, by an optical trick, appears to be in motion.  Media for moving images include motion pictures, video recordings, flip books, and some optical toys such as zoetropes."
+                    ],
+                    "es": [
+                        "Obras visuales en donde la imagen parece estar en movimiento, por medio de un truco visual. Medios para imágenes en movimiento que incluyen películas cinematográficas, grabaciones de video, historia en imágenes y algunos juguetes ópticos tal como el zoetropo."
+                    ],
+                    "nl": [
+                        "Beeldmateriaal waarin het beeld door een optische kunstgreep in beweging lijkt. Media voor bewegende beelden zijn films, video’s, flip books en bepaalde vormen van optisch speelgoed zoals zoëtropen."
+                    ]
+                },
+                "broader": [
+                    "http://vocab.getty.edu/aat/300191086"
+                ],
+                "exactMatch": [
+                    "http://www.wikidata.org/entity/Q10301427"
+                ]
+            }
+        ],
+        "edmDatasetName": [
+            "2051906_Ag_EU_EUscreen_1019"
+        ],
+        "europeanaAggregation": {
+            "about": "/aggregation/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380",
+            "aggregatedCHO": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380",
+            "edmCountry": {
+                "def": [
+                    "Netherlands"
+                ]
+            },
+            "edmLanguage": {
+                "def": [
+                    "nl"
+                ]
+            },
+            "edmPreview": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.openbeelden.nl%2Fimages%2F1220288%2FWielerwedstrijden_op_de_weg_om_het_kampioenschap_van_Nederland_%25281_06%2529.png&type=VIDEO",
+            "edmLandingPage": "https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380"
+        },
+        "europeanaCollectionName": [
+            "2051906_Ag_EU_EUscreen_1019"
+        ],
+        "europeanaCompleteness": 10,
+        "organizations": [
+            {
+                "about": "http://data.europeana.eu/organization/4538",
+                "prefLabel": {
+                    "en": [
+                        "Netherlands Institute for Sound & Vision"
+                    ],
+                    "nl": [
+                        "Nederlands Instituut voor Beeld & Geluid"
+                    ]
+                }
+            },
+            {
+                "about": "http://data.europeana.eu/organization/1607",
+                "prefLabel": {
+                    "en": [
+                        "EUscreen"
+                    ]
+                }
+            }
+        ],
+        "places": [
+            {
+                "about": "https://sws.geonames.org/2750405/",
+                "prefLabel": {
+                    "de": [
+                        "Niederlande"
+                    ],
+                    "no": [
+                        "Nederland"
+                    ],
+                    "ru": [
+                        "Нидерланды"
+                    ],
+                    "fi": [
+                        "Alankomaat"
+                    ],
+                    "pt": [
+                        "Países Baixos"
+                    ],
+                    "bg": [
+                        "Нидерландия"
+                    ],
+                    "lt": [
+                        "Nyderlandai"
+                    ],
+                    "hr": [
+                        "Nizozemska"
+                    ],
+                    "lv": [
+                        "Nīderlande"
+                    ],
+                    "fr": [
+                        "Pays-Bas"
+                    ],
+                    "hu": [
+                        "Hollandia"
+                    ],
+                    "sk": [
+                        "Holandsko"
+                    ],
+                    "sl": [
+                        "Nizozemska"
+                    ],
+                    "ga": [
+                        "an Ísiltír"
+                    ],
+                    "ca": [
+                        "Països Baixos"
+                    ],
+                    "sv": [
+                        "Nederländerna"
+                    ],
+                    "el": [
+                        "Ολλανδία"
+                    ],
+                    "mt": [
+                        "in-Netherlands"
+                    ],
+                    "en": [
+                        "The Netherlands"
+                    ],
+                    "it": [
+                        "Paesi Bassi"
+                    ],
+                    "es": [
+                        "Holanda",
+                        "Países Bajos"
+                    ],
+                    "et": [
+                        "Holland",
+                        "Madalmaad"
+                    ],
+                    "cs": [
+                        "Nizozemsko"
+                    ],
+                    "pl": [
+                        "Holandia"
+                    ],
+                    "ro": [
+                        "Țările de Jos"
+                    ],
+                    "da": [
+                        "Holland"
+                    ],
+                    "nl": [
+                        "Nederland"
+                    ]
+                },
+                "altLabel": {
+                    "pt": [
+                        "Holanda"
+                    ],
+                    "lt": [
+                        "Olandija"
+                    ],
+                    "en": [
+                        "Holland",
+                        "Kingdom of the Netherlands",
+                        "Netherlands"
+                    ],
+                    "it": [
+                        "Olanda"
+                    ],
+                    "ro": [
+                        "Olanda"
+                    ],
+                    "nl": [
+                        "Hollandt",
+                        "Koninkrijk der Nederlanden",
+                        "Nederlandt"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/6695072/",
+                        "https://sws.geonames.org/12503661/",
+                        "https://sws.geonames.org/9408659/",
+                        "https://sws.geonames.org/12718413/"
+                    ]
+                },
+                "latitude": 52.25,
+                "longitude": 5.75,
+                "owlSameAs": [
+                    "http://dbpedia.org/resource/Netherlands"
+                ]
+            },
+            {
+                "about": "http://data.europeana.eu/place/40564",
+                "prefLabel": {
+                    "de": [
+                        "Limburg"
+                    ],
+                    "ru": [
+                        "Лимбург"
+                    ],
+                    "fi": [
+                        "Limburg"
+                    ],
+                    "pt": [
+                        "Limburgo"
+                    ],
+                    "bg": [
+                        "Лимбург"
+                    ],
+                    "lt": [
+                        "Limburgo provincija"
+                    ],
+                    "lv": [
+                        "Limburga"
+                    ],
+                    "hr": [
+                        "Limburg"
+                    ],
+                    "fr": [
+                        "Limbourg"
+                    ],
+                    "hu": [
+                        "Limburg"
+                    ],
+                    "sk": [
+                        "Limbursko"
+                    ],
+                    "sl": [
+                        "Limburg (Nizozemska)"
+                    ],
+                    "ga": [
+                        "Limburg"
+                    ],
+                    "ca": [
+                        "Limburg"
+                    ],
+                    "sv": [
+                        "Limburg"
+                    ],
+                    "el": [
+                        "Λιμβουργία"
+                    ],
+                    "en": [
+                        "Limburg"
+                    ],
+                    "it": [
+                        "Limburgo"
+                    ],
+                    "es": [
+                        "Limburgo"
+                    ],
+                    "et": [
+                        "Limburgi provints"
+                    ],
+                    "eu": [
+                        "Limburg"
+                    ],
+                    "cs": [
+                        "Limburg"
+                    ],
+                    "pl": [
+                        "Limburgia"
+                    ],
+                    "ro": [
+                        "Limburg"
+                    ],
+                    "da": [
+                        "Limburg"
+                    ],
+                    "nl": [
+                        "Limburg"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "Provinz Limburg"
+                    ],
+                    "fr": [
+                        "Province de Limbourg"
+                    ],
+                    "nl": [
+                        "LI",
+                        "Provincie Limburg"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Niederländische Provinz"
+                    ],
+                    "sv": [
+                        "Provins i Nederländerna"
+                    ],
+                    "fi": [
+                        "Alankomaiden provinssi"
+                    ],
+                    "ru": [
+                        "Провинция в Нидерландах"
+                    ],
+                    "pt": [
+                        "Província dos Países Baixos"
+                    ],
+                    "el": [
+                        "Επαρχία της Ολλανδίας"
+                    ],
+                    "en": [
+                        "Province of the Netherlands"
+                    ],
+                    "it": [
+                        "Provincia olandese"
+                    ],
+                    "fr": [
+                        "Province des Pays-Bas"
+                    ],
+                    "hu": [
+                        "Tartomány Hollandiában"
+                    ],
+                    "es": [
+                        "Provincia de los Países Bajos"
+                    ],
+                    "cs": [
+                        "Nizozemská provincie"
+                    ],
+                    "da": [
+                        "Nederlandsk provins"
+                    ],
+                    "ca": [
+                        "Província del sud-est dels Països Baixos"
+                    ],
+                    "nl": [
+                        "Provincie van Nederland"
+                    ]
+                },
+                "latitude": 51.21,
+                "longitude": 5.936111,
+                "owlSameAs": [
+                    "http://www.wikidata.org/entity/Q1093",
+                    "http://www.gemeentegeschiedenis.nl/provincie/Limburg",
+                    "http://viaf.org/viaf/158264550",
+                    "https://d-nb.info/gnd/4272936-1",
+                    "http://id.loc.gov/authorities/names/n79074444",
+                    "http://data.bnf.fr/ark:/12148/cb120427627",
+                    "https://www.freebase.com/m/04q42",
+                    "https://g.co/kg/m/04q42",
+                    "https://sws.geonames.org/2751596/",
+                    "http://babelnet.org/rdf/s01106584n",
+                    "http://dbpedia.org/resource/Limburg_(Netherlands)"
+                ]
+            },
+            {
+                "about": "https://sws.geonames.org/2751596/",
+                "prefLabel": {
+                    "de": [
+                        "Limburg"
+                    ],
+                    "ru": [
+                        "Лимбург"
+                    ],
+                    "en": [
+                        "Limburg"
+                    ],
+                    "it": [
+                        "Limburgo"
+                    ],
+                    "fr": [
+                        "Limbourg"
+                    ],
+                    "es": [
+                        "Limburgo"
+                    ],
+                    "nl": [
+                        "Limburg"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "Provinz Limburg"
+                    ],
+                    "sv": [
+                        "Limburg"
+                    ],
+                    "fi": [
+                        "Limburg"
+                    ],
+                    "pt": [
+                        "Limburgo"
+                    ],
+                    "bg": [
+                        "Лимбург"
+                    ],
+                    "el": [
+                        "Λιμβουργία"
+                    ],
+                    "lt": [
+                        "Limburgo provincija"
+                    ],
+                    "lv": [
+                        "Limburga"
+                    ],
+                    "hr": [
+                        "Limburg"
+                    ],
+                    "hu": [
+                        "Limburg"
+                    ],
+                    "et": [
+                        "Limburgi provints"
+                    ],
+                    "cs": [
+                        "Limburg"
+                    ],
+                    "sk": [
+                        "Limbursko"
+                    ],
+                    "sl": [
+                        "Limburg"
+                    ],
+                    "ga": [
+                        "Limburg"
+                    ],
+                    "pl": [
+                        "Limburgia"
+                    ],
+                    "ro": [
+                        "Limburg"
+                    ],
+                    "da": [
+                        "Limburg"
+                    ],
+                    "ca": [
+                        "Limburg"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/2750405/"
+                    ]
+                },
+                "latitude": 51.25,
+                "longitude": 6.0,
+                "owlSameAs": [
+                    "http://dbpedia.org/resource/Limburg_%28Netherlands%29"
+                ]
+            }
+        ],
+        "providedCHOs": [
+            {
+                "about": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380"
+            }
+        ],
+        "proxies": [
+            {
+                "about": "/proxy/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380",
+                "dcIdentifier": {
+                    "def": [
+                        "http://mint-projects.image.ntua.gr/data/euscreenXL/https://www.openbeelden.nl/media/1215380"
+                    ]
+                },
+                "dcLanguage": {
+                    "def": [
+                        "nl"
+                    ]
+                },
+                "dcSubject": {
+                    "def": [
+                        "http://data.europeana.eu/concept/3054"
+                    ]
+                },
+                "dctermsCreated": {
+                    "def": [
+                        "#1949-06-13"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "def": [
+                        "http://data.europeana.eu/place/40564"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380"
+                ],
+                "proxyFor": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380",
+                "lineage": [
+                    "/proxy/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380"
+                ],
+                "europeanaProxy": true
+            },
+            {
+                "about": "/proxy/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380",
+                "dcCreator": {
+                    "nl": [
+                        "Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)"
+                    ]
+                },
+                "dcDescription": {
+                    "nl": [
+                        "Weekjournaal van Polygoon Hollands Nieuws van week 25 uit 1949.",
+                        "In en rond Valkenburg wordt het NK wielrennen op de weg voor amateurs (160km) en profs (210km) gehouden. SHOTS: - vóór de wedstrijd verzamelt het publiek zich langs de kant van de weg; - de renners starten en draaien hun rondes: door de straten; in de landelijke omgeving; op de Cauberg; - bij de amateurs wint Wout Wagtmans de eindsprint; - bij de profs ontstaat bij de eindsprint gedrang: Wim van Est gaat als eerste over de streep maar hindert daarbij Jefke Jansen; de aanvankelijk breed lachende Van Est beschouwt zichzelf als winnaar maar als de jury de protesterende Jansen tot winnaar uitroept, protesteren een huilende Van Est en zijn supporters op hun beurt bij de jury; een lachende Jansen kijkt toe. - verslaggever Jan Cottaar (links) en winnaar Jansen (rechts)."
+                    ]
+                },
+                "dcIdentifier": {
+                    "def": [
+                        "PGM4012042"
+                    ]
+                },
+                "dcLanguage": {
+                    "en": [
+                        "Dutch"
+                    ]
+                },
+                "dcPublisher": {
+                    "def": [
+                        "https://www.openbeelden.nl/users/beeldengeluid"
+                    ],
+                    "nl": [
+                        "Nederlands Instituut voor Beeld en Geluid"
+                    ]
+                },
+                "dcSource": {
+                    "en": [
+                        "Open Images"
+                    ],
+                    "nl": [
+                        "Open Beelden"
+                    ]
+                },
+                "dcSubject": {
+                    "def": [
+                        "http://www.wikidata.org/entity/Q3609"
+                    ]
+                },
+                "dcTitle": {
+                    "nl": [
+                        "Wielerwedstrijden op de weg om het kampioenschap van Nederland"
+                    ]
+                },
+                "dcType": {
+                    "def": [
+                        "http://vocab.getty.edu/aat/300263857"
+                    ]
+                },
+                "dctermsCreated": {
+                    "def": [
+                        "1949-06-13"
+                    ]
+                },
+                "dctermsExtent": {
+                    "def": [
+                        "PT2M13S"
+                    ]
+                },
+                "dctermsIsPartOf": {
+                    "en": [
+                        "Europeana Sport"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "nl": [
+                        "https://sws.geonames.org/2751596/"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380"
+                ],
+                "proxyFor": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215380",
+                "edmType": "VIDEO",
+                "europeanaProxy": false
+            }
+        ],
+        "timespans": [
+            {
+                "about": "#1949-06-13",
+                "prefLabel": {
+                    "zxx": [
+                        "1949-06-13"
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1949-06-13"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "1949-06-13"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "http://data.europeana.eu/timespan/20"
+                    ]
+                },
+                "skosNotation": {
+                    "def": [
+                        "1949-06-13"
+                    ]
+                }
+            },
+            {
+                "about": "http://data.europeana.eu/timespan/20",
+                "prefLabel": {
+                    "de": [
+                        "20. Jahrhundert"
+                    ],
+                    "ru": [
+                        "XX век"
+                    ],
+                    "fi": [
+                        "1900-luku"
+                    ],
+                    "pt": [
+                        "Século XX"
+                    ],
+                    "bg": [
+                        "20 век"
+                    ],
+                    "lt": [
+                        "XX amžius"
+                    ],
+                    "lv": [
+                        "20. gadsimts"
+                    ],
+                    "hr": [
+                        "20. stoljeće"
+                    ],
+                    "fr": [
+                        "XXe siècle"
+                    ],
+                    "hu": [
+                        "20. század"
+                    ],
+                    "sk": [
+                        "20. storočie"
+                    ],
+                    "sl": [
+                        "20. stoletje"
+                    ],
+                    "ga": [
+                        "20ú haois"
+                    ],
+                    "ca": [
+                        "Segle XX"
+                    ],
+                    "sv": [
+                        "1900-talet"
+                    ],
+                    "el": [
+                        "20ός αιώνας"
+                    ],
+                    "en": [
+                        "20th century"
+                    ],
+                    "it": [
+                        "XX secolo"
+                    ],
+                    "es": [
+                        "Siglo XX"
+                    ],
+                    "et": [
+                        "20. sajand"
+                    ],
+                    "eu": [
+                        "XX. mendea"
+                    ],
+                    "cs": [
+                        "20. století"
+                    ],
+                    "pl": [
+                        "XX wiek"
+                    ],
+                    "ro": [
+                        "Secolul al XX-lea"
+                    ],
+                    "da": [
+                        "20. århundrede"
+                    ],
+                    "nl": [
+                        "20e eeuw"
+                    ]
+                },
+                "altLabel": {
+                    "ru": [
+                        "20 век"
+                    ],
+                    "sv": [
+                        "20:e århundradet",
+                        "20:e seklet",
+                        "1900-tal",
+                        "1900-talet (århundrade)",
+                        "1900-talet (sekel)"
+                    ],
+                    "pt": [
+                        "Século 20",
+                        "Século vinte",
+                        "Periodo 1901-2000",
+                        "Ciclo (1901-2000)"
+                    ],
+                    "en": [
+                        "20th-century",
+                        "20th-century",
+                        "Twentieth century",
+                        "The past century",
+                        "History, 20th Century",
+                        "XX Century"
+                    ],
+                    "it": [
+                        "Novecento",
+                        "20° secolo",
+                        "'900",
+                        "Novecento"
+                    ],
+                    "fr": [
+                        "20e siècle"
+                    ],
+                    "es": [
+                        "Siglo 20",
+                        "El siglo pasado",
+                        "Siglo veinte",
+                        "Siglo XX después de Cristo",
+                        "Siglo XX d. C."
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1901-01-01"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "2000-12-31"
+                    ]
+                },
+                "owlSameAs": [
+                    "http://www.wikidata.org/entity/Q6927",
+                    "http://id.loc.gov/authorities/names/sh2002012476",
+                    "http://id.loc.gov/authorities/names/sh85139020",
+                    "http://id.nlm.nih.gov/mesh/D049673",
+                    "https://www.freebase.com/m/089_x",
+                    "https://g.co/kg/m/089_x",
+                    "http://id.nlm.nih.gov/mesh/K01.400.504.968",
+                    "http://vocab.getty.edu/aat/300404514",
+                    "http://id.worldcat.org/fast/1159810",
+                    "http://dbpedia.org/resource/20th_century"
+                ]
+            }
+        ],
+        "timestamp_created": "2021-04-26T07:37:20.398Z",
+        "timestamp_created_epoch": 1619422640398,
+        "timestamp_update": "2025-02-17T11:06:04.826Z",
+        "timestamp_update_epoch": 1739790364826,
+        "type": "VIDEO"
+    }
+}

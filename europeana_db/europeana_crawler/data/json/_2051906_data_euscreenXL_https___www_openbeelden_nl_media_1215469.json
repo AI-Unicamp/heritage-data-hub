@@ -1,0 +1,1288 @@
+{
+    "apikey": "iaceddupboa",
+    "success": true,
+    "statsDuration": 194,
+    "requestNumber": 999,
+    "object": {
+        "about": "/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469",
+        "aggregations": [
+            {
+                "about": "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469",
+                "edmDataProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/4538"
+                    ]
+                },
+                "edmIsShownBy": "https://www.openbeelden.nl/files/12/15/1216232.1215473.WEEKNUMMER493-HRE0000DF2D_343000_427000.mp4",
+                "edmIsShownAt": "https://www.openbeelden.nl/media/1215469",
+                "edmObject": "https://www.openbeelden.nl/images/1220120/Internationale_athletiekwedstrijden_%280_42%29.png",
+                "edmProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/1607"
+                    ]
+                },
+                "edmRights": {
+                    "def": [
+                        "http://creativecommons.org/publicdomain/mark/1.0/"
+                    ]
+                },
+                "edmUgc": "false",
+                "aggregatedCHO": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469",
+                "webResources": [
+                    {
+                        "about": "https://www.openbeelden.nl/images/1220120/Internationale_athletiekwedstrijden_%280_42%29.png",
+                        "textAttributionSnippet": "(nl) Internationale athletiekwedstrijden - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469. (nl) Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/1215469. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='nl'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469' target='_blank' rel='noopener'>Internationale athletiekwedstrijden</a></dd><dt>Creator</dt><dd lang='nl'>Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/1215469' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "ebucoreHasMimeType": "image/png",
+                        "ebucoreFileByteSize": 96949,
+                        "ebucoreWidth": 360,
+                        "ebucoreHeight": 288,
+                        "edmHasColorSpace": "sRGB",
+                        "edmComponentColor": [
+                            "#000000",
+                            "#708090",
+                            "#D8BFD8",
+                            "#C0C0C0",
+                            "#696969",
+                            "#556B2F"
+                        ],
+                        "ebucoreOrientation": "landscape"
+                    },
+                    {
+                        "about": "https://www.openbeelden.nl/media/1215469",
+                        "textAttributionSnippet": "(nl) Internationale athletiekwedstrijden - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469. (nl) Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/1215469. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='nl'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469' target='_blank' rel='noopener'>Internationale athletiekwedstrijden</a></dd><dt>Creator</dt><dd lang='nl'>Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/1215469' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "ebucoreHasMimeType": "application/xhtml+xml",
+                        "ebucoreFileByteSize": 0
+                    },
+                    {
+                        "about": "https://www.openbeelden.nl/files/12/15/1216232.1215473.WEEKNUMMER493-HRE0000DF2D_343000_427000.mp4",
+                        "textAttributionSnippet": "(nl) Internationale athletiekwedstrijden - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469. (nl) Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/1215469. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='nl'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469' target='_blank' rel='noopener'>Internationale athletiekwedstrijden</a></dd><dt>Creator</dt><dd lang='nl'>Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/1215469' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "dctermsIsReferencedBy": [
+                            "https://iiif.europeana.eu/presentation/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469/manifest"
+                        ],
+                        "edmCodecName": "h264",
+                        "ebucoreHasMimeType": "video/mp4",
+                        "ebucoreDuration": "84040",
+                        "ebucoreWidth": 720,
+                        "ebucoreHeight": 576,
+                        "ebucoreBitRate": 2025697,
+                        "ebucoreOrientation": "landscape",
+                        "ebucoreFrameRate": 25.0
+                    },
+                    {
+                        "about": "https://iiif.europeana.eu/presentation/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469/manifest",
+                        "rdfType": "http://iiif.io/api/presentation/3#Manifest"
+                    }
+                ],
+                "dqvHasQualityAnnotation": [
+                    {
+                        "created": "2025-02-17T11:38:19.910262550Z",
+                        "target": [
+                            "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469"
+                        ],
+                        "body": "http://www.europeana.eu/schemas/epf/contentTier4"
+                    },
+                    {
+                        "created": "2025-02-17T11:38:19.910279487Z",
+                        "target": [
+                            "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469"
+                        ],
+                        "body": "http://www.europeana.eu/schemas/epf/metadataTierC"
+                    }
+                ]
+            }
+        ],
+        "concepts": [
+            {
+                "about": "http://www.wikidata.org/entity/Q542",
+                "prefLabel": {
+                    "de": [
+                        "Leichtathletik"
+                    ],
+                    "ru": [
+                        "лёгкая атлетика"
+                    ],
+                    "fi": [
+                        "yleisurheilu"
+                    ],
+                    "pt": [
+                        "atletismo"
+                    ],
+                    "bg": [
+                        "лека атлетика"
+                    ],
+                    "lt": [
+                        "lengvoji atletika"
+                    ],
+                    "lv": [
+                        "vieglatlētika"
+                    ],
+                    "hr": [
+                        "atletika"
+                    ],
+                    "fr": [
+                        "athlétisme"
+                    ],
+                    "hu": [
+                        "könnyűatlétika"
+                    ],
+                    "sk": [
+                        "atletika"
+                    ],
+                    "sl": [
+                        "atletika"
+                    ],
+                    "ga": [
+                        "lúthchleasaíocht"
+                    ],
+                    "ca": [
+                        "atletisme"
+                    ],
+                    "sv": [
+                        "friidrott"
+                    ],
+                    "el": [
+                        "στίβος"
+                    ],
+                    "en": [
+                        "athletics"
+                    ],
+                    "it": [
+                        "atletica leggera"
+                    ],
+                    "es": [
+                        "atletismo"
+                    ],
+                    "et": [
+                        "kergejõustik"
+                    ],
+                    "eu": [
+                        "atletismo"
+                    ],
+                    "cs": [
+                        "atletika"
+                    ],
+                    "pl": [
+                        "lekkoatletyka"
+                    ],
+                    "ro": [
+                        "atletism"
+                    ],
+                    "da": [
+                        "atletik"
+                    ],
+                    "nl": [
+                        "atletiek"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "olympische Sportart"
+                    ],
+                    "sv": [
+                        "samling av idrottsgrenar bestående av löpning, hopp, kast och gång"
+                    ],
+                    "fi": [
+                        "urheilulajien ryhmä"
+                    ],
+                    "ru": [
+                        "олимпийский вид спорта, включающий бег, ходьбу, прыжки и метания"
+                    ],
+                    "pt": [
+                        "conjunto de desportos constituído por varias modalidades: corrida, marcha, lançamentos e saltos"
+                    ],
+                    "bg": [
+                        "спортове, включващи бягане, скачане, хвърляне и ходене"
+                    ],
+                    "el": [
+                        "είδος αθλήματος"
+                    ],
+                    "en": [
+                        "sports involving running, jumping, throwing and walking"
+                    ],
+                    "lv": [
+                        "sporta veids, apvieno skriešanu, lekšanu, mešanu un soļošanu"
+                    ],
+                    "it": [
+                        "insieme di discipline sportive quali corsa, salto, tiro e camminata"
+                    ],
+                    "fr": [
+                        "discipline sportive regroupant les sports pratiqués dans un stade : course, saut, lancer..."
+                    ],
+                    "hu": [
+                        "tágabb értelemben: futó, gyalogló, ugró és dobó vagy lökő sportágak összefoglaló elnevezése"
+                    ],
+                    "es": [
+                        "conjunto de deportes"
+                    ],
+                    "et": [
+                        "spordiala"
+                    ],
+                    "cs": [
+                        "sport"
+                    ],
+                    "pl": [
+                        "dyscyplina sportu"
+                    ],
+                    "da": [
+                        "samling af sport der består af løb, spring, kaste og gå"
+                    ],
+                    "ro": [
+                        "ramură sportivă"
+                    ],
+                    "ca": [
+                        "conjunt d'esports que impliquen córrer, saltar, llançar i caminar"
+                    ]
+                },
+                "broader": [
+                    "http://www.wikidata.org/entity/Q212434",
+                    "http://www.wikidata.org/entity/Q11047409",
+                    "http://www.wikidata.org/entity/Q31629"
+                ],
+                "related": [
+                    "http://www.wikidata.org/entity/Q11513337",
+                    "http://www.wikidata.org/entity/Q19827985",
+                    "http://www.wikidata.org/entity/Q7831495",
+                    "http://www.wikidata.org/entity/Q1004435",
+                    "http://www.wikidata.org/entity/Q21467672",
+                    "http://www.wikidata.org/entity/Q202391",
+                    "http://www.wikidata.org/entity/Q1151752",
+                    "http://www.wikidata.org/entity/Q3216963",
+                    "http://www.wikidata.org/entity/Q3924425",
+                    "http://www.wikidata.org/entity/Q3312129",
+                    "http://www.wikidata.org/entity/Q52177345",
+                    "http://www.wikidata.org/entity/Q10235779",
+                    "http://www.wikidata.org/entity/Q917206"
+                ],
+                "exactMatch": [
+                    "https://d-nb.info/gnd/4035163-4",
+                    "http://id.loc.gov/authorities/names/sh85009153",
+                    "http://id.loc.gov/authorities/names/sh85136443",
+                    "http://data.bnf.fr/ark:/12148/cb11931649q",
+                    "http://id.ndl.go.jp/auth/ndlna/00569475",
+                    "http://purl.org/bncf/tid/15667",
+                    "https://www.freebase.com/m/01191277",
+                    "https://g.co/kg/m/01191277",
+                    "http://vocab.getty.edu/aat/300189623",
+                    "http://www.yso.fi/onto/yso/p935",
+                    "http://zbw.eu/stw/descriptor/30039-4",
+                    "http://uri.gbv.de/terminology/bk/76.15",
+                    "http://www.yso.fi/onto/ysa/Y101577",
+                    "http://dbpedia.org/resource/Sport_of_athletics"
+                ]
+            },
+            {
+                "about": "http://data.europeana.eu/concept/2978",
+                "prefLabel": {
+                    "de": [
+                        "Leichtathletik"
+                    ],
+                    "ru": [
+                        "Лёгкая атлетика"
+                    ],
+                    "fi": [
+                        "Yleisurheilu"
+                    ],
+                    "pt": [
+                        "Atletismo"
+                    ],
+                    "bg": [
+                        "Лека атлетика"
+                    ],
+                    "lt": [
+                        "Lengvoji atletika"
+                    ],
+                    "lv": [
+                        "Vieglatlētika"
+                    ],
+                    "hr": [
+                        "Atletika"
+                    ],
+                    "fr": [
+                        "Athlétisme"
+                    ],
+                    "hu": [
+                        "Atlétika"
+                    ],
+                    "sk": [
+                        "Atletika"
+                    ],
+                    "sl": [
+                        "Atletika"
+                    ],
+                    "ga": [
+                        "Lúthchleasaíocht"
+                    ],
+                    "ca": [
+                        "Atletisme"
+                    ],
+                    "sv": [
+                        "Friidrott"
+                    ],
+                    "el": [
+                        "Στίβος"
+                    ],
+                    "en": [
+                        "Athletics"
+                    ],
+                    "it": [
+                        "Atletica leggera"
+                    ],
+                    "es": [
+                        "Atletismo"
+                    ],
+                    "et": [
+                        "Kergejõustik"
+                    ],
+                    "eu": [
+                        "Atletismo"
+                    ],
+                    "cs": [
+                        "Atletika"
+                    ],
+                    "pl": [
+                        "Lekkoatletyka"
+                    ],
+                    "ro": [
+                        "Atletism"
+                    ],
+                    "da": [
+                        "Atletik"
+                    ],
+                    "nl": [
+                        "Atletiek"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Olympische Sportart"
+                    ],
+                    "sv": [
+                        "Samling av idrottsgrenar bestående av löpning, hopp, kast och gång"
+                    ],
+                    "fi": [
+                        "Urheilulajien ryhmä"
+                    ],
+                    "ru": [
+                        "Олимпийский вид спорта, включающий бег, ходьбу, прыжки и метания"
+                    ],
+                    "pt": [
+                        "Conjunto de desportos constituído por varias modalidades: corrida, marcha, lançamentos e saltos"
+                    ],
+                    "bg": [
+                        "Спортове, включващи бягане, скачане, хвърляне и ходене"
+                    ],
+                    "el": [
+                        "Είδος αθλήματος"
+                    ],
+                    "en": [
+                        "Sports involving running, jumping, throwing and walking"
+                    ],
+                    "it": [
+                        "Insieme di discipline sportive quali corsa, salto, tiro e camminata"
+                    ],
+                    "fr": [
+                        "Discipline sportive regroupant les sports pratiqués dans un stade : course, saut, lancer..."
+                    ],
+                    "hu": [
+                        "Futó, gyalogló, ugró és dobó vagy lökő sportágak összefoglaló elnevezése"
+                    ],
+                    "es": [
+                        "Conjunto de deportes"
+                    ],
+                    "et": [
+                        "Spordiala"
+                    ],
+                    "cs": [
+                        "Sport"
+                    ],
+                    "pl": [
+                        "Dyscyplina sportu"
+                    ],
+                    "da": [
+                        "Samling af sport der består af løb, spring, kaste og gå"
+                    ],
+                    "ro": [
+                        "Ramură sportivă"
+                    ],
+                    "ca": [
+                        "Conjunt d'esports que impliquen córrer, saltar, llançar i caminar"
+                    ]
+                },
+                "related": [
+                    "http://data.europeana.eu/concept/3159",
+                    "http://data.europeana.eu/concept/3051"
+                ],
+                "exactMatch": [
+                    "http://www.wikidata.org/entity/Q542",
+                    "https://d-nb.info/gnd/4035163-4",
+                    "http://id.loc.gov/authorities/names/sh85009153",
+                    "http://id.loc.gov/authorities/names/sh85136443",
+                    "http://data.bnf.fr/ark:/12148/cb11931649q",
+                    "http://id.ndl.go.jp/auth/ndlna/00569475",
+                    "http://purl.org/bncf/tid/15667",
+                    "https://www.freebase.com/m/01191277",
+                    "https://g.co/kg/m/01191277",
+                    "http://vocab.getty.edu/aat/300189623",
+                    "http://www.yso.fi/onto/yso/p935",
+                    "http://zbw.eu/stw/descriptor/30039-4",
+                    "http://uri.gbv.de/terminology/bk/76.15",
+                    "http://www.yso.fi/onto/ysa/Y101577",
+                    "http://dbpedia.org/resource/Sport_of_athletics"
+                ]
+            },
+            {
+                "about": "http://vocab.getty.edu/aat/300263857",
+                "prefLabel": {
+                    "de": [
+                        "bewegtes Bild"
+                    ],
+                    "pt": [
+                        "imagens em movimento"
+                    ],
+                    "en": [
+                        "moving images"
+                    ],
+                    "es": [
+                        "imágenes en movimiento"
+                    ],
+                    "nl": [
+                        "bewegende beelden"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "bewegte Bilder"
+                    ],
+                    "pt": [
+                        "imagem em movimento"
+                    ],
+                    "en": [
+                        "moving image"
+                    ],
+                    "es": [
+                        "fotografía en movimiento",
+                        "imagen en movimiento"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Visuelles Werk, in der das Bild durch einen optischen Trick wie bewegt erscheint. Zu den Medien bewegter Bilder zählen Filme, Videoaufnahmen, Daumenkinos und einige optische Spielzeuge wie Zoetrope."
+                    ],
+                    "pt": [
+                        "Obras visuais nas quais a imagem, por meio de um truque óptico, parece estar em movimento. Os meios para imagens em movimento incluem ilustrações em movimento, gravações em vídeo e alguns brinquedos ópticos como zootrópios."
+                    ],
+                    "en": [
+                        "Visual works in which the image, by an optical trick, appears to be in motion.  Media for moving images include motion pictures, video recordings, flip books, and some optical toys such as zoetropes."
+                    ],
+                    "es": [
+                        "Obras visuales en donde la imagen parece estar en movimiento, por medio de un truco visual. Medios para imágenes en movimiento que incluyen películas cinematográficas, grabaciones de video, historia en imágenes y algunos juguetes ópticos tal como el zoetropo."
+                    ],
+                    "nl": [
+                        "Beeldmateriaal waarin het beeld door een optische kunstgreep in beweging lijkt. Media voor bewegende beelden zijn films, video’s, flip books en bepaalde vormen van optisch speelgoed zoals zoëtropen."
+                    ]
+                },
+                "broader": [
+                    "http://vocab.getty.edu/aat/300191086"
+                ],
+                "exactMatch": [
+                    "http://www.wikidata.org/entity/Q10301427"
+                ]
+            }
+        ],
+        "edmDatasetName": [
+            "2051906_Ag_EU_EUscreen_1019"
+        ],
+        "europeanaAggregation": {
+            "about": "/aggregation/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469",
+            "aggregatedCHO": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469",
+            "edmCountry": {
+                "def": [
+                    "Netherlands"
+                ]
+            },
+            "edmLanguage": {
+                "def": [
+                    "nl"
+                ]
+            },
+            "edmPreview": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.openbeelden.nl%2Fimages%2F1220120%2FInternationale_athletiekwedstrijden_%25280_42%2529.png&type=VIDEO",
+            "edmLandingPage": "https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469"
+        },
+        "europeanaCollectionName": [
+            "2051906_Ag_EU_EUscreen_1019"
+        ],
+        "europeanaCompleteness": 10,
+        "organizations": [
+            {
+                "about": "http://data.europeana.eu/organization/4538",
+                "prefLabel": {
+                    "en": [
+                        "Netherlands Institute for Sound & Vision"
+                    ],
+                    "nl": [
+                        "Nederlands Instituut voor Beeld & Geluid"
+                    ]
+                }
+            },
+            {
+                "about": "http://data.europeana.eu/organization/1607",
+                "prefLabel": {
+                    "en": [
+                        "EUscreen"
+                    ]
+                }
+            }
+        ],
+        "places": [
+            {
+                "about": "https://sws.geonames.org/2759794/",
+                "prefLabel": {
+                    "es": [
+                        "Ámsterdam"
+                    ],
+                    "nl": [
+                        "Amsterdam"
+                    ]
+                },
+                "altLabel": {
+                    "no": [
+                        "Amsterdam"
+                    ],
+                    "de": [
+                        "Amsterdam"
+                    ],
+                    "ru": [
+                        "Амстердам"
+                    ],
+                    "fi": [
+                        "Amsterdam"
+                    ],
+                    "pt": [
+                        "Amesterdã",
+                        "Amesterdão",
+                        "Amsterdã"
+                    ],
+                    "bg": [
+                        "Амстердам"
+                    ],
+                    "el": [
+                        "Ámsterdam",
+                        "Άμστερνταμ"
+                    ],
+                    "lt": [
+                        "Amsterdamas"
+                    ],
+                    "en": [
+                        "Amsterdam"
+                    ],
+                    "lv": [
+                        "Amsterdama"
+                    ],
+                    "hr": [
+                        "Amsterdam"
+                    ],
+                    "fr": [
+                        "Amsterdam"
+                    ],
+                    "hu": [
+                        "Amszterdam"
+                    ],
+                    "cs": [
+                        "Amsterodam"
+                    ],
+                    "ga": [
+                        "Amstardam"
+                    ],
+                    "ro": [
+                        "Amsterdam"
+                    ],
+                    "ca": [
+                        "Amsterdam"
+                    ],
+                    "nl": [
+                        "Aemstelredamme",
+                        "Aemsterdam",
+                        "Mokum"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/2759793/"
+                    ]
+                },
+                "latitude": 52.37403,
+                "longitude": 4.88969,
+                "owlSameAs": [
+                    "http://dbpedia.org/resource/Amsterdam",
+                    "http://dbpedia.org/resource/Government_of_Amsterdam"
+                ]
+            },
+            {
+                "about": "http://data.europeana.eu/place/40963",
+                "prefLabel": {
+                    "de": [
+                        "Amsterdam"
+                    ],
+                    "fi": [
+                        "Amsterdam"
+                    ],
+                    "sv": [
+                        "Amsterdam"
+                    ],
+                    "ru": [
+                        "Амстердам"
+                    ],
+                    "pt": [
+                        "Amesterdão"
+                    ],
+                    "mt": [
+                        "Amsterdam"
+                    ],
+                    "el": [
+                        "Δήμος Άμστερνταμ"
+                    ],
+                    "en": [
+                        "Amsterdam"
+                    ],
+                    "lv": [
+                        "Amsterdama"
+                    ],
+                    "it": [
+                        "Amsterdam"
+                    ],
+                    "fr": [
+                        "Amsterdam"
+                    ],
+                    "hu": [
+                        "Amszterdam"
+                    ],
+                    "es": [
+                        "Amsterdam"
+                    ],
+                    "eu": [
+                        "Amsterdam"
+                    ],
+                    "cs": [
+                        "Amsterdam"
+                    ],
+                    "ga": [
+                        "Amstardam"
+                    ],
+                    "pl": [
+                        "Amsterdam"
+                    ],
+                    "ro": [
+                        "Amsterdam"
+                    ],
+                    "da": [
+                        "Amsterdam"
+                    ],
+                    "ca": [
+                        "Amsterdam"
+                    ],
+                    "nl": [
+                        "Amsterdam"
+                    ]
+                },
+                "altLabel": {
+                    "en": [
+                        "Amsterdam municipality"
+                    ],
+                    "es": [
+                        "Gobierno de Amsterdam",
+                        "Ámsterdam"
+                    ],
+                    "nl": [
+                        "Gemeente Amsterdam",
+                        "A'dam",
+                        "Amsterdam (gemeente)",
+                        "AMS",
+                        "Mokum",
+                        "Mokum Alef",
+                        "Gemeente Amsterdam",
+                        "Stad Amsterdam"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Gemeinde in der niederländischen Provinz Nord-Holland"
+                    ],
+                    "fi": [
+                        "Alankomaiden kunta, johon sisältyy Amsterdamin kaupunki"
+                    ],
+                    "ru": [
+                        "Община в Нидерландах"
+                    ],
+                    "mt": [
+                        "Muniċipalità fin-Netherlands"
+                    ],
+                    "en": [
+                        "Municipality in the Netherlands, containing the cities of Amsterdam and Weesp"
+                    ],
+                    "ga": [
+                        "Bardasacht san Ísiltír, ina bhfuil cathair Amstardam"
+                    ],
+                    "it": [
+                        "Comune olandese"
+                    ],
+                    "fr": [
+                        "Commune des Pays-Bas"
+                    ],
+                    "da": [
+                        "Kommune i Nederlandene"
+                    ],
+                    "ca": [
+                        "Municipi de la província neerlandesa d'Holanda Septentrional"
+                    ],
+                    "nl": [
+                        "Gemeente in Noord-Holland, Nederland"
+                    ],
+                    "es": [
+                        "Gobierno municipal de los Países Bajos"
+                    ]
+                },
+                "latitude": 52.366665,
+                "longitude": 4.883333,
+                "owlSameAs": [
+                    "http://www.wikidata.org/entity/Q9899",
+                    "http://viaf.org/viaf/158824135",
+                    "http://www.idref.fr/026359049/id",
+                    "https://www.freebase.com/m/04bww8",
+                    "https://g.co/kg/m/04bww8",
+                    "https://sws.geonames.org/2759793/",
+                    "http://dbpedia.org/resource/Government_of_Amsterdam"
+                ]
+            },
+            {
+                "about": "https://sws.geonames.org/2759793/",
+                "prefLabel": {
+                    "es": [
+                        "Amsterdam"
+                    ]
+                },
+                "altLabel": {
+                    "nl": [
+                        "Amsterdam"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/2749879/"
+                    ]
+                },
+                "latitude": 52.37302,
+                "longitude": 4.89856
+            },
+            {
+                "about": "http://data.europeana.eu/place/40964",
+                "prefLabel": {
+                    "de": [
+                        "Amsterdam"
+                    ],
+                    "fi": [
+                        "Amsterdam"
+                    ],
+                    "ru": [
+                        "Амстердам"
+                    ],
+                    "pt": [
+                        "Amesterdão"
+                    ],
+                    "bg": [
+                        "Амстердам"
+                    ],
+                    "lt": [
+                        "Amsterdamas"
+                    ],
+                    "lv": [
+                        "Amsterdama"
+                    ],
+                    "hr": [
+                        "Amsterdam"
+                    ],
+                    "fr": [
+                        "Amsterdam"
+                    ],
+                    "hu": [
+                        "Amszterdam"
+                    ],
+                    "sk": [
+                        "Amsterdam"
+                    ],
+                    "sl": [
+                        "Amsterdam"
+                    ],
+                    "ga": [
+                        "Amstardam"
+                    ],
+                    "ca": [
+                        "Amsterdam"
+                    ],
+                    "sv": [
+                        "Amsterdam"
+                    ],
+                    "mt": [
+                        "Amsterdam"
+                    ],
+                    "el": [
+                        "Άμστερνταμ"
+                    ],
+                    "en": [
+                        "Amsterdam"
+                    ],
+                    "it": [
+                        "Amsterdam"
+                    ],
+                    "es": [
+                        "Ámsterdam"
+                    ],
+                    "et": [
+                        "Amsterdam"
+                    ],
+                    "eu": [
+                        "Amsterdam"
+                    ],
+                    "cs": [
+                        "Amsterdam"
+                    ],
+                    "pl": [
+                        "Amsterdam"
+                    ],
+                    "ro": [
+                        "Amsterdam"
+                    ],
+                    "da": [
+                        "Amsterdam"
+                    ],
+                    "nl": [
+                        "Amsterdam"
+                    ]
+                },
+                "altLabel": {
+                    "cs": [
+                        "Amsterodam"
+                    ],
+                    "de": [
+                        "A’dam"
+                    ],
+                    "pt": [
+                        "Amsterdam",
+                        "Amsterdã",
+                        "Amesterdao",
+                        "Amsterdam, Países Baixos",
+                        "Abstradam",
+                        "Mastradama"
+                    ],
+                    "el": [
+                        "Αμστελόδαμον",
+                        "Αμστελόδαμο"
+                    ],
+                    "en": [
+                        "Mokum",
+                        "Amsterdam, NL",
+                        "Amsterdam, Netherlands",
+                        "A'dam"
+                    ],
+                    "nl": [
+                        "Mokum",
+                        "A'dam",
+                        "020",
+                        "Asd.",
+                        "Damsko"
+                    ],
+                    "es": [
+                        "Amsterdam",
+                        "Proclamado de sucesos larry styinson"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Hauptstadt und bevölkerungsreichste Stadt der Niederlande"
+                    ],
+                    "sv": [
+                        "Huvudstad i Nederländerna"
+                    ],
+                    "fi": [
+                        "Alankomaiden pääkaupunki"
+                    ],
+                    "ru": [
+                        "Город, столица Нидерландов"
+                    ],
+                    "pt": [
+                        "Capital e maior cidade dos Países Baixos"
+                    ],
+                    "mt": [
+                        "Belt kapitali tan-Netherlands"
+                    ],
+                    "el": [
+                        "Πρωτεύουσα της Ολλανδίας"
+                    ],
+                    "en": [
+                        "Capital and most populous city of the Netherlands"
+                    ],
+                    "hr": [
+                        "Glavni grad Nizozemske"
+                    ],
+                    "lv": [
+                        "Nīderlandes galvaspilsēta"
+                    ],
+                    "it": [
+                        "Capitale dei Paesi Bassi"
+                    ],
+                    "fr": [
+                        "Capitale des Pays-Bas"
+                    ],
+                    "hu": [
+                        "Hollandia fővárosa"
+                    ],
+                    "es": [
+                        "Capital de los Países Bajos"
+                    ],
+                    "cs": [
+                        "Hlavní město Nizozemska"
+                    ],
+                    "sk": [
+                        "Hlavné mesto Holandska"
+                    ],
+                    "pl": [
+                        "Stolica Holandii"
+                    ],
+                    "ca": [
+                        "Capital dels Països Baixos"
+                    ],
+                    "nl": [
+                        "Stad in Noord-Holland, Nederland"
+                    ]
+                },
+                "latitude": 52.372776,
+                "longitude": 4.893611,
+                "altitude": -2.0,
+                "owlSameAs": [
+                    "http://www.wikidata.org/entity/Q727",
+                    "http://viaf.org/viaf/158212776",
+                    "https://d-nb.info/gnd/4001783-7",
+                    "http://id.loc.gov/authorities/names/n78095634",
+                    "http://data.bnf.fr/ark:/12148/cb119430472",
+                    "http://id.ndl.go.jp/auth/ndlna/00628114",
+                    "https://www.freebase.com/m/0k3p",
+                    "https://g.co/kg/m/0k3p",
+                    "https://sws.geonames.org/2759794/",
+                    "http://vocab.getty.edu/tgn/7006952",
+                    "http://www.yso.fi/onto/yso/p106815",
+                    "http://babelnet.org/rdf/s00003686n",
+                    "http://dbpedia.org/resource/Amsterdam"
+                ]
+            }
+        ],
+        "providedCHOs": [
+            {
+                "about": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469"
+            }
+        ],
+        "proxies": [
+            {
+                "about": "/proxy/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469",
+                "dcIdentifier": {
+                    "def": [
+                        "http://mint-projects.image.ntua.gr/data/euscreenXL/https://www.openbeelden.nl/media/1215469"
+                    ]
+                },
+                "dcLanguage": {
+                    "def": [
+                        "nl"
+                    ]
+                },
+                "dcSubject": {
+                    "def": [
+                        "http://data.europeana.eu/concept/2978"
+                    ]
+                },
+                "dctermsCreated": {
+                    "def": [
+                        "#1949-08-08"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "def": [
+                        "http://data.europeana.eu/place/40963",
+                        "http://data.europeana.eu/place/40964"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469"
+                ],
+                "proxyFor": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469",
+                "lineage": [
+                    "/proxy/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469"
+                ],
+                "europeanaProxy": true
+            },
+            {
+                "about": "/proxy/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469",
+                "dcCreator": {
+                    "nl": [
+                        "Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)"
+                    ]
+                },
+                "dcDescription": {
+                    "nl": [
+                        "Weekjournaal van Polygoon Hollands Nieuws van week 33 uit 1949.",
+                        "In het Olympisch Stadion te Amsterdam worden internationale atletiekwedstrijden gehouden. SHOTS: - discuswerpen; hoogspringen (winnaar de Amerikaan Philips(?)); verspringen (winnaar de Nederlander Naaktgeboren(?)); hordenlopen (winnaar de Amerikaan Attlesey(?)); hardlopen 1500 mtr. heren (de Nederlander Wim Slijkhuis); hardlopen 100 mtr. dames (de Nederlandse Foekje Dillema)."
+                    ]
+                },
+                "dcIdentifier": {
+                    "def": [
+                        "PGM4012050"
+                    ]
+                },
+                "dcLanguage": {
+                    "en": [
+                        "Dutch"
+                    ]
+                },
+                "dcPublisher": {
+                    "def": [
+                        "https://www.openbeelden.nl/users/beeldengeluid"
+                    ],
+                    "nl": [
+                        "Nederlands Instituut voor Beeld en Geluid"
+                    ]
+                },
+                "dcSource": {
+                    "en": [
+                        "Open Images"
+                    ],
+                    "nl": [
+                        "Open Beelden"
+                    ]
+                },
+                "dcSubject": {
+                    "def": [
+                        "http://www.wikidata.org/entity/Q542"
+                    ]
+                },
+                "dcTitle": {
+                    "nl": [
+                        "Internationale athletiekwedstrijden"
+                    ]
+                },
+                "dcType": {
+                    "def": [
+                        "http://vocab.getty.edu/aat/300263857"
+                    ]
+                },
+                "dctermsCreated": {
+                    "def": [
+                        "1949-08-08"
+                    ]
+                },
+                "dctermsExtent": {
+                    "def": [
+                        "PT1M24S"
+                    ]
+                },
+                "dctermsIsPartOf": {
+                    "en": [
+                        "Europeana Sport"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "def": [
+                        "https://sws.geonames.org/2759794/"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469"
+                ],
+                "proxyFor": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215469",
+                "edmType": "VIDEO",
+                "europeanaProxy": false
+            }
+        ],
+        "timespans": [
+            {
+                "about": "#1949-08-08",
+                "prefLabel": {
+                    "zxx": [
+                        "1949-08-08"
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1949-08-08"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "1949-08-08"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "http://data.europeana.eu/timespan/20"
+                    ]
+                },
+                "skosNotation": {
+                    "def": [
+                        "1949-08-08"
+                    ]
+                }
+            },
+            {
+                "about": "http://data.europeana.eu/timespan/20",
+                "prefLabel": {
+                    "de": [
+                        "20. Jahrhundert"
+                    ],
+                    "ru": [
+                        "XX век"
+                    ],
+                    "fi": [
+                        "1900-luku"
+                    ],
+                    "pt": [
+                        "Século XX"
+                    ],
+                    "bg": [
+                        "20 век"
+                    ],
+                    "lt": [
+                        "XX amžius"
+                    ],
+                    "lv": [
+                        "20. gadsimts"
+                    ],
+                    "hr": [
+                        "20. stoljeće"
+                    ],
+                    "fr": [
+                        "XXe siècle"
+                    ],
+                    "hu": [
+                        "20. század"
+                    ],
+                    "sk": [
+                        "20. storočie"
+                    ],
+                    "sl": [
+                        "20. stoletje"
+                    ],
+                    "ga": [
+                        "20ú haois"
+                    ],
+                    "ca": [
+                        "Segle XX"
+                    ],
+                    "sv": [
+                        "1900-talet"
+                    ],
+                    "el": [
+                        "20ός αιώνας"
+                    ],
+                    "en": [
+                        "20th century"
+                    ],
+                    "it": [
+                        "XX secolo"
+                    ],
+                    "es": [
+                        "Siglo XX"
+                    ],
+                    "et": [
+                        "20. sajand"
+                    ],
+                    "eu": [
+                        "XX. mendea"
+                    ],
+                    "cs": [
+                        "20. století"
+                    ],
+                    "pl": [
+                        "XX wiek"
+                    ],
+                    "ro": [
+                        "Secolul al XX-lea"
+                    ],
+                    "da": [
+                        "20. århundrede"
+                    ],
+                    "nl": [
+                        "20e eeuw"
+                    ]
+                },
+                "altLabel": {
+                    "ru": [
+                        "20 век"
+                    ],
+                    "sv": [
+                        "20:e århundradet",
+                        "20:e seklet",
+                        "1900-tal",
+                        "1900-talet (århundrade)",
+                        "1900-talet (sekel)"
+                    ],
+                    "pt": [
+                        "Século 20",
+                        "Século vinte",
+                        "Periodo 1901-2000",
+                        "Ciclo (1901-2000)"
+                    ],
+                    "en": [
+                        "20th-century",
+                        "20th-century",
+                        "Twentieth century",
+                        "The past century",
+                        "History, 20th Century",
+                        "XX Century"
+                    ],
+                    "it": [
+                        "Novecento",
+                        "20° secolo",
+                        "'900",
+                        "Novecento"
+                    ],
+                    "fr": [
+                        "20e siècle"
+                    ],
+                    "es": [
+                        "Siglo 20",
+                        "El siglo pasado",
+                        "Siglo veinte",
+                        "Siglo XX después de Cristo",
+                        "Siglo XX d. C."
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1901-01-01"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "2000-12-31"
+                    ]
+                },
+                "owlSameAs": [
+                    "http://www.wikidata.org/entity/Q6927",
+                    "http://id.loc.gov/authorities/names/sh2002012476",
+                    "http://id.loc.gov/authorities/names/sh85139020",
+                    "http://id.nlm.nih.gov/mesh/D049673",
+                    "https://www.freebase.com/m/089_x",
+                    "https://g.co/kg/m/089_x",
+                    "http://id.nlm.nih.gov/mesh/K01.400.504.968",
+                    "http://vocab.getty.edu/aat/300404514",
+                    "http://id.worldcat.org/fast/1159810",
+                    "http://dbpedia.org/resource/20th_century"
+                ]
+            }
+        ],
+        "timestamp_created": "2021-04-26T07:37:20.398Z",
+        "timestamp_created_epoch": 1619422640398,
+        "timestamp_update": "2025-02-17T11:06:04.826Z",
+        "timestamp_update_epoch": 1739790364826,
+        "type": "VIDEO"
+    }
+}

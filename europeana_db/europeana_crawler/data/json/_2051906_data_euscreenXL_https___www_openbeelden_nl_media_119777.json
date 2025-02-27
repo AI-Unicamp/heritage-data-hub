@@ -1,0 +1,1536 @@
+{
+    "apikey": "iaceddupboa",
+    "success": true,
+    "statsDuration": 198,
+    "requestNumber": 999,
+    "object": {
+        "about": "/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+        "aggregations": [
+            {
+                "about": "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                "edmDataProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/4538"
+                    ]
+                },
+                "edmIsShownBy": "https://www.openbeelden.nl/files/01/19/119791.119776.WEEKNUMMER290-HRE0002A4DD_3405000_3469000.mp4",
+                "edmIsShownAt": "https://www.openbeelden.nl/media/119777",
+                "edmObject": "https://www.openbeelden.nl/images/689884/Opening_VARA_gebouw_%280_31%29.png",
+                "edmProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/1607"
+                    ]
+                },
+                "edmRights": {
+                    "def": [
+                        "http://creativecommons.org/publicdomain/mark/1.0/"
+                    ]
+                },
+                "edmUgc": "false",
+                "aggregatedCHO": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                "webResources": [
+                    {
+                        "about": "https://www.openbeelden.nl/images/689884/Opening_VARA_gebouw_%280_31%29.png",
+                        "textAttributionSnippet": "(en) Opening VARA building - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777. (en) Polygoon-Profilti (producer); Netherlands Institute for Sound and Vision (curator). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/119777. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='en'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777' target='_blank' rel='noopener'>Opening VARA building</a></dd><dt>Creator</dt><dd lang='en'>Polygoon-Profilti (producer); Netherlands Institute for Sound and Vision (curator)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/119777' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "ebucoreHasMimeType": "image/png",
+                        "ebucoreFileByteSize": 100661,
+                        "ebucoreWidth": 360,
+                        "ebucoreHeight": 288,
+                        "edmHasColorSpace": "sRGB",
+                        "edmComponentColor": [
+                            "#BDB76B",
+                            "#F8F8FF",
+                            "#B0C4DE",
+                            "#DCDCDC",
+                            "#000000",
+                            "#2F4F4F"
+                        ],
+                        "ebucoreOrientation": "landscape"
+                    },
+                    {
+                        "about": "https://www.openbeelden.nl/files/01/19/119791.119776.WEEKNUMMER290-HRE0002A4DD_3405000_3469000.mp4",
+                        "textAttributionSnippet": "(en) Opening VARA building - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777. (en) Polygoon-Profilti (producer); Netherlands Institute for Sound and Vision (curator). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/119777. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='en'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777' target='_blank' rel='noopener'>Opening VARA building</a></dd><dt>Creator</dt><dd lang='en'>Polygoon-Profilti (producer); Netherlands Institute for Sound and Vision (curator)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/119777' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "dctermsIsReferencedBy": [
+                            "https://iiif.europeana.eu/presentation/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777/manifest"
+                        ],
+                        "edmCodecName": "h264",
+                        "ebucoreHasMimeType": "video/mp4",
+                        "ebucoreDuration": "63960",
+                        "ebucoreWidth": 720,
+                        "ebucoreHeight": 576,
+                        "ebucoreBitRate": 2018443,
+                        "ebucoreOrientation": "landscape",
+                        "ebucoreFrameRate": 25.0
+                    },
+                    {
+                        "about": "https://www.openbeelden.nl/media/119777",
+                        "textAttributionSnippet": "(en) Opening VARA building - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777. (en) Polygoon-Profilti (producer); Netherlands Institute for Sound and Vision (curator). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/119777. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='en'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777' target='_blank' rel='noopener'>Opening VARA building</a></dd><dt>Creator</dt><dd lang='en'>Polygoon-Profilti (producer); Netherlands Institute for Sound and Vision (curator)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/119777' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "ebucoreHasMimeType": "application/xhtml+xml",
+                        "ebucoreFileByteSize": 0
+                    },
+                    {
+                        "about": "https://iiif.europeana.eu/presentation/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777/manifest",
+                        "rdfType": "http://iiif.io/api/presentation/3#Manifest"
+                    }
+                ]
+            },
+            {
+                "about": "/aggregation/aggregator/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                "edmDataProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/1607"
+                    ]
+                },
+                "edmIsShownBy": "https://www.openbeelden.nl/files/01/19/119791.119776.WEEKNUMMER290-HRE0002A4DD_3405000_3469000.mp4",
+                "edmIsShownAt": "https://www.openbeelden.nl/media/119777",
+                "edmProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/1607"
+                    ]
+                },
+                "edmRights": {
+                    "def": [
+                        "http://creativecommons.org/publicdomain/mark/1.0/"
+                    ]
+                },
+                "edmUgc": "false",
+                "aggregatedCHO": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                "dqvHasQualityAnnotation": [
+                    {
+                        "created": "2025-02-17T11:48:01.624374681Z",
+                        "target": [
+                            "/aggregation/aggregator/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777"
+                        ],
+                        "body": "http://www.europeana.eu/schemas/epf/contentTier4"
+                    },
+                    {
+                        "created": "2025-02-17T11:48:01.624394314Z",
+                        "target": [
+                            "/aggregation/aggregator/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777"
+                        ],
+                        "body": "http://www.europeana.eu/schemas/epf/metadataTierC"
+                    }
+                ]
+            }
+        ],
+        "concepts": [
+            {
+                "about": "http://vocab.getty.edu/aat/300263857",
+                "prefLabel": {
+                    "de": [
+                        "bewegtes Bild"
+                    ],
+                    "pt": [
+                        "imagens em movimento"
+                    ],
+                    "en": [
+                        "moving images"
+                    ],
+                    "es": [
+                        "imágenes en movimiento"
+                    ],
+                    "nl": [
+                        "bewegende beelden"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "bewegte Bilder"
+                    ],
+                    "pt": [
+                        "imagem em movimento"
+                    ],
+                    "en": [
+                        "moving image"
+                    ],
+                    "es": [
+                        "fotografía en movimiento",
+                        "imagen en movimiento"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Visuelles Werk, in der das Bild durch einen optischen Trick wie bewegt erscheint. Zu den Medien bewegter Bilder zählen Filme, Videoaufnahmen, Daumenkinos und einige optische Spielzeuge wie Zoetrope."
+                    ],
+                    "pt": [
+                        "Obras visuais nas quais a imagem, por meio de um truque óptico, parece estar em movimento. Os meios para imagens em movimento incluem ilustrações em movimento, gravações em vídeo e alguns brinquedos ópticos como zootrópios."
+                    ],
+                    "en": [
+                        "Visual works in which the image, by an optical trick, appears to be in motion.  Media for moving images include motion pictures, video recordings, flip books, and some optical toys such as zoetropes."
+                    ],
+                    "es": [
+                        "Obras visuales en donde la imagen parece estar en movimiento, por medio de un truco visual. Medios para imágenes en movimiento que incluyen películas cinematográficas, grabaciones de video, historia en imágenes y algunos juguetes ópticos tal como el zoetropo."
+                    ],
+                    "nl": [
+                        "Beeldmateriaal waarin het beeld door een optische kunstgreep in beweging lijkt. Media voor bewegende beelden zijn films, video’s, flip books en bepaalde vormen van optisch speelgoed zoals zoëtropen."
+                    ]
+                },
+                "broader": [
+                    "http://vocab.getty.edu/aat/300191086"
+                ],
+                "exactMatch": [
+                    "http://www.wikidata.org/entity/Q10301427"
+                ]
+            }
+        ],
+        "edmDatasetName": [
+            "2051906_Ag_EU_EUscreen_1019"
+        ],
+        "europeanaAggregation": {
+            "about": "/aggregation/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+            "aggregatedCHO": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+            "edmCountry": {
+                "def": [
+                    "Netherlands"
+                ]
+            },
+            "edmLanguage": {
+                "def": [
+                    "nl"
+                ]
+            },
+            "edmPreview": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.openbeelden.nl%2Fimages%2F689884%2FOpening_VARA_gebouw_%25280_31%2529.png&type=VIDEO",
+            "edmLandingPage": "https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777"
+        },
+        "europeanaCollectionName": [
+            "2051906_Ag_EU_EUscreen_1019"
+        ],
+        "europeanaCompleteness": 10,
+        "organizations": [
+            {
+                "about": "http://data.europeana.eu/organization/4538",
+                "prefLabel": {
+                    "en": [
+                        "Netherlands Institute for Sound & Vision"
+                    ],
+                    "nl": [
+                        "Nederlands Instituut voor Beeld & Geluid"
+                    ]
+                }
+            },
+            {
+                "about": "http://data.europeana.eu/organization/1607",
+                "prefLabel": {
+                    "en": [
+                        "EUscreen"
+                    ]
+                }
+            }
+        ],
+        "places": [
+            {
+                "about": "http://data.europeana.eu/place/106",
+                "prefLabel": {
+                    "de": [
+                        "Königreich der Niederlande"
+                    ],
+                    "ru": [
+                        "Королевство Нидерландов"
+                    ],
+                    "fi": [
+                        "Alankomaiden kuningaskunta"
+                    ],
+                    "pt": [
+                        "Reino dos Países Baixos"
+                    ],
+                    "bg": [
+                        "Кралство Нидерландия"
+                    ],
+                    "lt": [
+                        "Nyderlandai"
+                    ],
+                    "lv": [
+                        "Nīderlandes Karaliste"
+                    ],
+                    "hr": [
+                        "Kraljevina Nizozemska"
+                    ],
+                    "fr": [
+                        "Royaume des Pays-Bas"
+                    ],
+                    "hu": [
+                        "Holland Királyság"
+                    ],
+                    "sk": [
+                        "Holandské kráľovstvo"
+                    ],
+                    "sl": [
+                        "Kraljevina Nizozemska"
+                    ],
+                    "ga": [
+                        "Ríocht na hÍsiltíre"
+                    ],
+                    "ca": [
+                        "Regne dels Països Baixos"
+                    ],
+                    "sv": [
+                        "Konungariket Nederländerna"
+                    ],
+                    "mt": [
+                        "Renju tan-Netherlands"
+                    ],
+                    "el": [
+                        "Βασίλειο των Κάτω Χωρών"
+                    ],
+                    "en": [
+                        "Kingdom of the Netherlands"
+                    ],
+                    "it": [
+                        "Regno dei Paesi Bassi"
+                    ],
+                    "es": [
+                        "Reino de los Países Bajos"
+                    ],
+                    "et": [
+                        "Madalmaade Kuningriik"
+                    ],
+                    "cs": [
+                        "Nizozemské království"
+                    ],
+                    "eu": [
+                        "Herbehereetako Erresuma"
+                    ],
+                    "pl": [
+                        "Holandia"
+                    ],
+                    "ro": [
+                        "Regatul Țărilor de Jos"
+                    ],
+                    "da": [
+                        "Kongeriget Nederlandene"
+                    ],
+                    "nl": [
+                        "Koninkrijk der Nederlanden"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "NL",
+                        "Niederlande"
+                    ],
+                    "sv": [
+                        "Kungariket Nederländerna"
+                    ],
+                    "ru": [
+                        "Нидерланды",
+                        "Голландия"
+                    ],
+                    "pt": [
+                        "Países Baixos",
+                        "NL"
+                    ],
+                    "mt": [
+                        "Netherlands",
+                        "Olanda",
+                        "Pajjiżi Baxxi",
+                        "Renju tal-Pajjiżi Baxxi"
+                    ],
+                    "el": [
+                        "Βασίλειο της Ολλανδίας"
+                    ],
+                    "en": [
+                        "The Netherlands",
+                        "Netherlands",
+                        "NL"
+                    ],
+                    "it": [
+                        "Paesi Bassi",
+                        "NL"
+                    ],
+                    "fr": [
+                        "NL",
+                        "Royaume des Pays-Bas",
+                        "Pays-Bas"
+                    ],
+                    "hu": [
+                        "Hollandia"
+                    ],
+                    "es": [
+                        "Koninkrijk der Nederlanden",
+                        "Reino de Los Paises Bajos",
+                        "Paises Bajos",
+                        "NL"
+                    ],
+                    "eu": [
+                        "Herbeheretako Erresuma"
+                    ],
+                    "sk": [
+                        "Holandsko"
+                    ],
+                    "ga": [
+                        "An Ísiltír",
+                        "An Ollainn"
+                    ],
+                    "pl": [
+                        "Niderlandy",
+                        "Królestwo Niderlandów",
+                        "Nederland",
+                        "NL",
+                        "Koninkrijk der Nederlanden"
+                    ],
+                    "ro": [
+                        "Țările de Jos",
+                        "Regatul Ţărilor de Jos",
+                        "Netherlands",
+                        "Ţările de Jos",
+                        "Tarile de Jos"
+                    ],
+                    "da": [
+                        "Koninkrijk der Nederlanden"
+                    ],
+                    "nl": [
+                        "Nederland",
+                        "NL",
+                        "NED"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Die Niederlande inklusive Aruba, Curaçao und Sint Maarten"
+                    ],
+                    "fi": [
+                        "Valtioliitto Euroopassa ja Karibialla"
+                    ],
+                    "ru": [
+                        "Составное суверенное государство; с 16 марта 1815, в Западной Европе и Карибском бассейне"
+                    ],
+                    "sv": [
+                        "Består av Aruba, Curaçao, Nederländerna och Sint Maarten"
+                    ],
+                    "pt": [
+                        "Estado soberano e monarquia constitucional"
+                    ],
+                    "bg": [
+                        "Държава в Европа и Карибите"
+                    ],
+                    "mt": [
+                        "Stat sovran fl-Ewropa tal-Punent u fil-Karibew"
+                    ],
+                    "el": [
+                        "Ανεξάρτητο κράτος που αποτελείται από την Αρούμπα, Κουρακάο, Άγιο Μαρτίνο, και τις Κάτω Χώρες"
+                    ],
+                    "en": [
+                        "Sovereign state and constitutional monarchy"
+                    ],
+                    "it": [
+                        "Stato sovrano dell'Unione Europea con territori in Europa e nei Caraibi"
+                    ],
+                    "fr": [
+                        "Pays d'Europe occidentale"
+                    ],
+                    "hu": [
+                        "Állam Nyugat-Európában és a Karib-térségben"
+                    ],
+                    "es": [
+                        "Estado federado miembro de la Unión Europea y formado por Aruba, Curazao, Sint Maarten y los Países Bajos"
+                    ],
+                    "cs": [
+                        "Stát sestávající z evropského Nizozemska a ostrovů v Karibiku"
+                    ],
+                    "pl": [
+                        "Państwo w Europie Zachodniej"
+                    ],
+                    "ro": [
+                        "Stat în Europa de Vest"
+                    ],
+                    "da": [
+                        "Kongeriget Nederlandene bestående af Aruba, Curaçao, Nederlandene og Sint Maarten"
+                    ],
+                    "ca": [
+                        "Federació formada per Aruba, Curaçao, Sint Maarten i els mateixos Països Baixos"
+                    ],
+                    "nl": [
+                        "Soevereine staat bestaande uit Aruba, Curaçao, Nederland en Sint Maarten"
+                    ]
+                },
+                "latitude": 52.366665,
+                "longitude": 4.883333,
+                "owlSameAs": [
+                    "http://www.wikidata.org/entity/Q29999",
+                    "http://viaf.org/viaf/156652814",
+                    "http://data.bnf.fr/ark:/12148/cb12497447f",
+                    "http://www.idref.fr/034191089/id",
+                    "https://www.freebase.com/m/049nq",
+                    "https://g.co/kg/m/049nq",
+                    "https://sws.geonames.org/2750405/",
+                    "http://nomisma.org/id/kingdom_of_the_netherlands",
+                    "http://dbpedia.org/resource/Kingdom_of_the_Netherlands"
+                ]
+            },
+            {
+                "about": "http://www.wikidata.org/entity/Q9934",
+                "prefLabel": {
+                    "de": [
+                        "Hilversum"
+                    ],
+                    "sv": [
+                        "Hilversum"
+                    ],
+                    "ru": [
+                        "Хилверсюм"
+                    ],
+                    "fi": [
+                        "Hilversum"
+                    ],
+                    "pt": [
+                        "Hilversum"
+                    ],
+                    "el": [
+                        "Χίλφερσουμ"
+                    ],
+                    "lt": [
+                        "Hilversiumas"
+                    ],
+                    "en": [
+                        "Hilversum"
+                    ],
+                    "lv": [
+                        "Hilversuma"
+                    ],
+                    "hr": [
+                        "Hilversum"
+                    ],
+                    "it": [
+                        "Hilversum"
+                    ],
+                    "fr": [
+                        "Hilversum"
+                    ],
+                    "hu": [
+                        "Hilversum"
+                    ],
+                    "es": [
+                        "Hilversum"
+                    ],
+                    "et": [
+                        "Hilversum"
+                    ],
+                    "eu": [
+                        "Hilversum"
+                    ],
+                    "cs": [
+                        "Hilversum"
+                    ],
+                    "sl": [
+                        "Hilversum"
+                    ],
+                    "ga": [
+                        "Hilversum"
+                    ],
+                    "pl": [
+                        "Hilversum"
+                    ],
+                    "ro": [
+                        "Hilversum"
+                    ],
+                    "da": [
+                        "Hilversum"
+                    ],
+                    "ca": [
+                        "Hilversum"
+                    ],
+                    "nl": [
+                        "Hilversum"
+                    ]
+                },
+                "altLabel": {
+                    "nl": [
+                        "Gemeente Hilversum",
+                        "Hilversum (plaats)"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Gemeinde in der niederländischen Provinz Nordholland"
+                    ],
+                    "ru": [
+                        "населённый пункт в Нидерландах"
+                    ],
+                    "fi": [
+                        "kaupunki Pohjois-Hollannin provinssissa, Alankomaissa"
+                    ],
+                    "el": [
+                        "δήμος της Ολλανδίας"
+                    ],
+                    "en": [
+                        "town and municipality in North Holland, the Netherlands"
+                    ],
+                    "it": [
+                        "comune olandese"
+                    ],
+                    "fr": [
+                        "commune néerlandaise située en Hollande-Septentrionale"
+                    ],
+                    "hu": [
+                        "város Észak-Holland tartományban"
+                    ],
+                    "es": [
+                        "municipio de los Países Bajos"
+                    ],
+                    "eu": [
+                        "Ipar Holandako hiria, Herbehereak"
+                    ],
+                    "sl": [
+                        "občina na Nizozemskem"
+                    ],
+                    "pl": [
+                        "miasto w Holandii"
+                    ],
+                    "da": [
+                        "By i Nederlandene"
+                    ],
+                    "ca": [
+                        "municipi d'Holanda Septentrional, Països Baixos"
+                    ],
+                    "nl": [
+                        "plaats en gemeente in Noord-Holland, Nederland"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "http://www.wikidata.org/entity/Q55"
+                    ]
+                },
+                "latitude": 52.23,
+                "longitude": 5.18,
+                "altitude": 15.0,
+                "owlSameAs": [
+                    "http://viaf.org/viaf/144233774",
+                    "https://d-nb.info/gnd/4242521-9",
+                    "http://id.loc.gov/authorities/names/n79070135",
+                    "https://www.freebase.com/m/03kfl",
+                    "https://g.co/kg/m/03kfl",
+                    "https://sws.geonames.org/2754063/",
+                    "https://sws.geonames.org/2754064/",
+                    "http://vocab.getty.edu/tgn/7007042",
+                    "http://id.worldcat.org/fast/1205615",
+                    "http://dbpedia.org/resource/Hilversum"
+                ]
+            },
+            {
+                "about": "http://www.wikidata.org/entity/Q55",
+                "prefLabel": {
+                    "de": [
+                        "Niederlande"
+                    ],
+                    "ru": [
+                        "Нидерланды"
+                    ],
+                    "fi": [
+                        "Alankomaat"
+                    ],
+                    "pt": [
+                        "Países Baixos"
+                    ],
+                    "bg": [
+                        "Нидерландия"
+                    ],
+                    "lt": [
+                        "Nyderlandai"
+                    ],
+                    "lv": [
+                        "Nīderlande"
+                    ],
+                    "hr": [
+                        "Nizozemska"
+                    ],
+                    "fr": [
+                        "Pays-Bas"
+                    ],
+                    "hu": [
+                        "Hollandia"
+                    ],
+                    "sk": [
+                        "Holandsko"
+                    ],
+                    "sl": [
+                        "Nizozemska"
+                    ],
+                    "ga": [
+                        "an Ísiltír"
+                    ],
+                    "ca": [
+                        "Països Baixos"
+                    ],
+                    "sv": [
+                        "Nederländerna"
+                    ],
+                    "el": [
+                        "Ολλανδία"
+                    ],
+                    "mt": [
+                        "Netherlands"
+                    ],
+                    "en": [
+                        "Netherlands"
+                    ],
+                    "it": [
+                        "Paesi Bassi"
+                    ],
+                    "es": [
+                        "Países Bajos"
+                    ],
+                    "et": [
+                        "Holland"
+                    ],
+                    "eu": [
+                        "Herbehereak"
+                    ],
+                    "cs": [
+                        "Nizozemsko"
+                    ],
+                    "pl": [
+                        "Holandia"
+                    ],
+                    "ro": [
+                        "Țările de Jos"
+                    ],
+                    "da": [
+                        "Holland"
+                    ],
+                    "nl": [
+                        "Nederland"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "Holland",
+                        "die Niederlande",
+                        "NL",
+                        "NLD",
+                        "NED"
+                    ],
+                    "sv": [
+                        "Nederland"
+                    ],
+                    "ru": [
+                        "Голландия",
+                        "Nederland"
+                    ],
+                    "fi": [
+                        "Hollanti",
+                        "Nederland"
+                    ],
+                    "pt": [
+                        "Holanda",
+                        "os Países Baixos",
+                        "NL",
+                        "NED",
+                        "Nederland",
+                        "nl"
+                    ],
+                    "bg": [
+                        "Кралство Нидерландия",
+                        "Холандия"
+                    ],
+                    "mt": [
+                        "Olanda",
+                        "Pajjiżi Baxxi",
+                        "Renju tan-Netherlands"
+                    ],
+                    "el": [
+                        "Κάτω Χώρες"
+                    ],
+                    "en": [
+                        "Holland",
+                        "the Netherlands",
+                        "NL",
+                        "NED",
+                        "Nederland",
+                        "nl"
+                    ],
+                    "lv": [
+                        "Holande"
+                    ],
+                    "hr": [
+                        "Holandija"
+                    ],
+                    "it": [
+                        "NLD",
+                        "NED",
+                        "HOL"
+                    ],
+                    "fr": [
+                        "Hollande",
+                        "NL",
+                        "nl",
+                        "NED",
+                        "le Royaume des Pays-Bas",
+                        "P.-B.",
+                        "P.B."
+                    ],
+                    "es": [
+                        "Holanda",
+                        "Los Países Bajos",
+                        "NL",
+                        "NLD",
+                        "Paises Bajos",
+                        "Los Paises Bajos",
+                        "NED"
+                    ],
+                    "sl": [
+                        "Holandija"
+                    ],
+                    "ga": [
+                        "an Ollainn"
+                    ],
+                    "pl": [
+                        "Niderlandy"
+                    ],
+                    "da": [
+                        "Nederlandene",
+                        "Nederland",
+                        "NL",
+                        "NED",
+                        "nl"
+                    ],
+                    "ro": [
+                        "Olanda",
+                        "Țara lalelelor",
+                        "Țara Lalelelor",
+                        "Țara morilor de vânt"
+                    ],
+                    "ca": [
+                        "Holanda"
+                    ],
+                    "nl": [
+                        "NL",
+                        "NED",
+                        "nl",
+                        "NLD",
+                        "Holland",
+                        "de Nederlanden"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "eines der vier autonomen Länder des Königreiches der Niederlande"
+                    ],
+                    "sv": [
+                        "konstitutionell monarki i Västeuropa"
+                    ],
+                    "ru": [
+                        "государство в Западной Европе, континентальная часть Королевства Нидерландов"
+                    ],
+                    "fi": [
+                        "valtio Länsi-Euroopassa"
+                    ],
+                    "pt": [
+                        "país no noroeste da Europa com territórios no Caribe"
+                    ],
+                    "bg": [
+                        "държава в Западна Европа"
+                    ],
+                    "el": [
+                        "χώρα της Δυτικής Ευρώπης"
+                    ],
+                    "mt": [
+                        "pajjiż fl-Ewropa tal-Punent"
+                    ],
+                    "en": [
+                        "country in Northwestern Europe with territories in the Caribbean"
+                    ],
+                    "lv": [
+                        "valsts Rietumeiropā, daļa no Nīderlandes Karalistes"
+                    ],
+                    "hr": [
+                        "zemlja u zapadnoj Europi"
+                    ],
+                    "it": [
+                        "nazione costitutiva del Regno dei Paesi Bassi"
+                    ],
+                    "fr": [
+                        "l'un des quatre pays constitutifs du royaume des Pays-Bas (partie européenne)"
+                    ],
+                    "hu": [
+                        "állam Nyugat-Európában és a Karib-térségben"
+                    ],
+                    "es": [
+                        "país europeo del Reino de los Países Bajos"
+                    ],
+                    "cs": [
+                        "stát v severozápadní Evropě"
+                    ],
+                    "sk": [
+                        "konštitučná monarchia v západnej Európe"
+                    ],
+                    "sl": [
+                        "država v Evropi"
+                    ],
+                    "ga": [
+                        "Ríocht na hÍsiltíre"
+                    ],
+                    "pl": [
+                        "kraj składowy Królestwa Niderlandów"
+                    ],
+                    "da": [
+                        "et land i Vesteuropa"
+                    ],
+                    "ro": [
+                        "stat în Europa de Vest"
+                    ],
+                    "ca": [
+                        "estat d'Europa occidental"
+                    ],
+                    "nl": [
+                        "land binnen het Koninkrijk der Nederlanden"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "http://www.wikidata.org/entity/Q29999",
+                        "http://www.wikidata.org/entity/Q458",
+                        "http://www.wikidata.org/entity/Q13116",
+                        "http://www.wikidata.org/entity/Q27496"
+                    ]
+                },
+                "latitude": 52.316666,
+                "longitude": 5.55,
+                "owlSameAs": [
+                    "http://viaf.org/viaf/156652814",
+                    "https://d-nb.info/gnd/4042203-3",
+                    "http://id.loc.gov/authorities/names/n78085423",
+                    "http://data.bnf.fr/ark:/12148/cb11862083x",
+                    "http://www.idref.fr/026357240/id",
+                    "http://id.ndl.go.jp/auth/ndlna/00568908",
+                    "http://id.nlm.nih.gov/mesh/D009426",
+                    "https://www.freebase.com/m/059j2",
+                    "https://g.co/kg/m/059j2",
+                    "http://id.nlm.nih.gov/mesh/Z01.542.651",
+                    "http://libris.kb.se/resource/auth/155069",
+                    "http://datos.bne.es/resource/XX451224",
+                    "https://livedata.bibsys.no/authority/90546878",
+                    "https://sws.geonames.org/2750405/",
+                    "http://vocab.getty.edu/tgn/7016845",
+                    "http://id.worldcat.org/fast/1204034",
+                    "http://www.yso.fi/onto/yso/p105190",
+                    "http://babelnet.org/rdf/s00044423n",
+                    "http://zbw.eu/stw/descriptor/17433-5",
+                    "http://vocabularies.unesco.org/thesaurus/concept917",
+                    "https://libris.kb.se/fcrtsp7z3dl9s7q",
+                    "http://www.yso.fi/onto/ysa/Y105190",
+                    "http://dbpedia.org/resource/Netherlands"
+                ]
+            },
+            {
+                "about": "http://www.wikidata.org/entity/Q29999",
+                "prefLabel": {
+                    "de": [
+                        "Königreich der Niederlande"
+                    ],
+                    "ru": [
+                        "Королевство Нидерландов"
+                    ],
+                    "fi": [
+                        "Alankomaiden kuningaskunta"
+                    ],
+                    "pt": [
+                        "Reino dos Países Baixos"
+                    ],
+                    "bg": [
+                        "Кралство Нидерландия"
+                    ],
+                    "lt": [
+                        "Nyderlandai"
+                    ],
+                    "lv": [
+                        "Nīderlandes Karaliste"
+                    ],
+                    "hr": [
+                        "Kraljevina Nizozemska"
+                    ],
+                    "fr": [
+                        "Royaume des Pays-Bas"
+                    ],
+                    "hu": [
+                        "Holland Királyság"
+                    ],
+                    "sk": [
+                        "Holandské kráľovstvo"
+                    ],
+                    "sl": [
+                        "Kraljevina Nizozemska"
+                    ],
+                    "ga": [
+                        "Ríocht na hÍsiltíre"
+                    ],
+                    "ca": [
+                        "Regne dels Països Baixos"
+                    ],
+                    "sv": [
+                        "Konungariket Nederländerna"
+                    ],
+                    "mt": [
+                        "Renju tan-Netherlands"
+                    ],
+                    "el": [
+                        "Βασίλειο των Κάτω Χωρών"
+                    ],
+                    "en": [
+                        "Kingdom of the Netherlands"
+                    ],
+                    "it": [
+                        "Regno dei Paesi Bassi"
+                    ],
+                    "es": [
+                        "Reino de los Países Bajos"
+                    ],
+                    "et": [
+                        "Madalmaade Kuningriik"
+                    ],
+                    "cs": [
+                        "Nizozemské království"
+                    ],
+                    "eu": [
+                        "Herbehereetako Erresuma"
+                    ],
+                    "pl": [
+                        "Holandia"
+                    ],
+                    "ro": [
+                        "Regatul Țărilor de Jos"
+                    ],
+                    "da": [
+                        "Kongeriget Nederlandene"
+                    ],
+                    "nl": [
+                        "Koninkrijk der Nederlanden"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "NL",
+                        "Niederlande"
+                    ],
+                    "sv": [
+                        "Kungariket Nederländerna"
+                    ],
+                    "ru": [
+                        "Нидерланды"
+                    ],
+                    "pt": [
+                        "Países Baixos",
+                        "NL"
+                    ],
+                    "mt": [
+                        "Netherlands",
+                        "Olanda",
+                        "Pajjiżi Baxxi",
+                        "Renju tal-Pajjiżi Baxxi"
+                    ],
+                    "el": [
+                        "Βασίλειο της Ολλανδίας"
+                    ],
+                    "en": [
+                        "Netherlands",
+                        "the Netherlands",
+                        "Nederlanden",
+                        "NL"
+                    ],
+                    "it": [
+                        "Paesi Bassi",
+                        "NL"
+                    ],
+                    "fr": [
+                        "NL",
+                        "royaume des Pays-Bas",
+                        "Pays-Bas"
+                    ],
+                    "hu": [
+                        "Hollandia"
+                    ],
+                    "es": [
+                        "Koninkrijk der Nederlanden",
+                        "Reino de Los Paises Bajos",
+                        "Paises Bajos",
+                        "NL"
+                    ],
+                    "eu": [
+                        "Herbeheretako Erresuma"
+                    ],
+                    "sk": [
+                        "Holandsko"
+                    ],
+                    "ga": [
+                        "An Ísiltír",
+                        "An Ollainn"
+                    ],
+                    "pl": [
+                        "Niderlandy",
+                        "Królestwo Niderlandów",
+                        "Nederland",
+                        "NL",
+                        "Koninkrijk der Nederlanden"
+                    ],
+                    "ro": [
+                        "Țările de Jos",
+                        "Regatul Ţărilor de Jos",
+                        "Netherlands",
+                        "Ţările de Jos",
+                        "Tarile de Jos"
+                    ],
+                    "da": [
+                        "Koninkrijk der Nederlanden"
+                    ],
+                    "nl": [
+                        "Nederland"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "die Niederlande inklusive Aruba, Curaçao und Sint Maarten"
+                    ],
+                    "fi": [
+                        "valtioliitto Euroopassa ja Karibialla"
+                    ],
+                    "ru": [
+                        "составное суверенное государство; с 16 марта 1815, в Западной Европе и Карибском бассейне"
+                    ],
+                    "sv": [
+                        "består av Aruba, Curaçao, Nederländerna och Sint Maarten"
+                    ],
+                    "pt": [
+                        "estado soberano e monarquia constitucional"
+                    ],
+                    "bg": [
+                        "държава в Европа и Карибите"
+                    ],
+                    "mt": [
+                        "stat sovran fl-Ewropa tal-Punent u fil-Karibew"
+                    ],
+                    "el": [
+                        "ανεξάρτητο κράτος που αποτελείται από την Αρούμπα, Κουρακάο, Άγιο Μαρτίνο, και τις Κάτω Χώρες"
+                    ],
+                    "en": [
+                        "transcontinental sovereign state and constitutional monarchy"
+                    ],
+                    "it": [
+                        "monarchia costituzionale formata da 4 nazioni costitutive: Paesi Bassi (in Europa e nei Caraibi), Aruba, Curaçao e Sint Maarten (nei Caraibi)"
+                    ],
+                    "fr": [
+                        "État souverain et monarchie constitutionnelle transcontinentale"
+                    ],
+                    "hu": [
+                        "állam Nyugat-Európában és a Karib-térségben"
+                    ],
+                    "es": [
+                        "estado federado miembro de la Unión Europea y formado por Aruba, Curazao, Sint Maarten y los Países Bajos"
+                    ],
+                    "cs": [
+                        "stát sestávající z evropského Nizozemska a ostrovů v Karibiku"
+                    ],
+                    "pl": [
+                        "państwo w Europie Zachodniej"
+                    ],
+                    "ro": [
+                        "stat în Europa de Vest"
+                    ],
+                    "da": [
+                        "Kongeriget Nederlandene bestående af Aruba, Curaçao, Nederlandene og Sint Maarten"
+                    ],
+                    "ca": [
+                        "federació formada per Aruba, Curaçao, Sint Maarten i els mateixos Països Baixos"
+                    ],
+                    "nl": [
+                        "soevereine staat bestaande uit Aruba, Curaçao, Nederland en Sint Maarten"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "http://www.wikidata.org/entity/Q8932"
+                    ]
+                },
+                "latitude": 52.366665,
+                "longitude": 4.883333,
+                "owlSameAs": [
+                    "http://viaf.org/viaf/156652814",
+                    "http://data.bnf.fr/ark:/12148/cb12497447f",
+                    "http://www.idref.fr/034191089/id",
+                    "https://www.freebase.com/m/049nq",
+                    "https://g.co/kg/m/049nq",
+                    "http://nomisma.org/id/kingdom_of_the_netherlands",
+                    "http://dbpedia.org/resource/Kingdom_of_the_Netherlands"
+                ]
+            }
+        ],
+        "providedCHOs": [
+            {
+                "about": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777"
+            }
+        ],
+        "proxies": [
+            {
+                "about": "/proxy/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                "dcIdentifier": {
+                    "def": [
+                        "http://mint-projects.image.ntua.gr/data/euscreenXL/https://www.openbeelden.nl/media/119777"
+                    ]
+                },
+                "dcLanguage": {
+                    "def": [
+                        "nl"
+                    ]
+                },
+                "dctermsCreated": {
+                    "def": [
+                        "#1929-03-02"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "def": [
+                        "http://data.europeana.eu/place/106"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777"
+                ],
+                "proxyFor": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                "lineage": [
+                    "/proxy/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                    "/proxy/aggregator/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777"
+                ],
+                "europeanaProxy": true
+            },
+            {
+                "about": "/proxy/aggregator/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                "dcDescription": {
+                    "en": [
+                        "The Minister of Water Management, H. van der Vegte, gives a speech at the opening of the VARA studio building in Hilversum. SHOTS: -cu of outdoor lantern with the VARA logo; -ext. VARA studio building; -some shots of Van der Vegte: leaves car with company; enters studio and gives speech.",
+                        "Cinema newsreels in which Dutch subjects of a certain week are presented."
+                    ]
+                },
+                "dcTitle": {
+                    "en": [
+                        "Opening VARA building"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "def": [
+                        "http://www.wikidata.org/entity/Q29999",
+                        "http://www.wikidata.org/entity/Q9934",
+                        "http://www.wikidata.org/entity/Q55"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/aggregator/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777"
+                ],
+                "proxyFor": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                "lineage": [
+                    "/proxy/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777"
+                ],
+                "edmType": "VIDEO",
+                "europeanaProxy": false
+            },
+            {
+                "about": "/proxy/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                "dcCreator": {
+                    "en": [
+                        "Polygoon-Profilti (producer)",
+                        "Netherlands Institute for Sound and Vision (curator)"
+                    ],
+                    "nl": [
+                        "Polygoon-Profilti (producent)",
+                        "Nederlands Instituut voor Beeld en Geluid (beheerder)"
+                    ]
+                },
+                "dcDescription": {
+                    "en": [
+                        "Newsreels in which Dutch subjects of a certain week are presented.",
+                        "The Minister of Water Works, mr. H. van der Vegte, delivers a speech on teh occasion of the opening of the VARA studio building in Hilversum. SHOTS: - close up of an outdoor lantern with the VARA logo; - ext. VARA studio building; - several shots of Van der Vegte: exiting the car with his company; entering the studio and delivering a speech."
+                    ],
+                    "nl": [
+                        "Bioscoopjournaals waarin Nederlandse onderwerpen van een bepaalde week worden gepresenteerd.",
+                        "De minister van Waterstaat, mr. H. van der Vegte, houdt een toespraak tgv de opening van het VARA-studiogebouw in Hilversum. SHOTS: -cu van buitenlantaarn met het VARA-logo; -ext. VARA-studiogebouw; -enkele shots van Van der Vegte: verlaat met gezelschap auto; gaat studio binnen en houdt toespraak."
+                    ]
+                },
+                "dcIdentifier": {
+                    "def": [
+                        "526264"
+                    ]
+                },
+                "dcLanguage": {
+                    "def": [
+                        "nl"
+                    ]
+                },
+                "dcPublisher": {
+                    "def": [
+                        "https://www.openbeelden.nl/users/beeldengeluid"
+                    ],
+                    "nl": [
+                        "Nederlands Instituut voor Beeld en Geluid"
+                    ]
+                },
+                "dcRights": {
+                    "nl": [
+                        "Polygoon-Profilti (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)"
+                    ]
+                },
+                "dcSource": {
+                    "en": [
+                        "Open Images"
+                    ],
+                    "nl": [
+                        "Open Beelden"
+                    ]
+                },
+                "dcSubject": {
+                    "en": [
+                        "openings",
+                        "Vegte",
+                        "H. van der",
+                        "VARA"
+                    ],
+                    "nl": [
+                        "openingen",
+                        "Vegte, H. van der",
+                        "VARA"
+                    ]
+                },
+                "dcTitle": {
+                    "en": [
+                        "Opening of the VARA building"
+                    ],
+                    "nl": [
+                        "Opening VARA gebouw"
+                    ]
+                },
+                "dcType": {
+                    "def": [
+                        "http://vocab.getty.edu/aat/300263857"
+                    ]
+                },
+                "dctermsAlternative": {
+                    "en": [
+                        "Week number 29-06"
+                    ],
+                    "nl": [
+                        "Weeknummer 29-06"
+                    ]
+                },
+                "dctermsCreated": {
+                    "def": [
+                        "1929-03-02"
+                    ]
+                },
+                "dctermsExtent": {
+                    "def": [
+                        "PT1M3S"
+                    ]
+                },
+                "dctermsHasFormat": {
+                    "def": [
+                        "film"
+                    ]
+                },
+                "dctermsIsPartOf": {
+                    "en": [
+                        "Europeana XX: Century of Change",
+                        "Europeana Subtitled"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "en": [
+                        "Hilversum",
+                        "Netherlands"
+                    ],
+                    "nl": [
+                        "Hilversum",
+                        "Nederland"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777"
+                ],
+                "proxyFor": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_119777",
+                "edmType": "VIDEO",
+                "europeanaProxy": false
+            }
+        ],
+        "timespans": [
+            {
+                "about": "#1929-03-02",
+                "prefLabel": {
+                    "zxx": [
+                        "1929-03-02"
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1929-03-02"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "1929-03-02"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "http://data.europeana.eu/timespan/20"
+                    ]
+                },
+                "skosNotation": {
+                    "def": [
+                        "1929-03-02"
+                    ]
+                }
+            },
+            {
+                "about": "http://data.europeana.eu/timespan/20",
+                "prefLabel": {
+                    "de": [
+                        "20. Jahrhundert"
+                    ],
+                    "ru": [
+                        "XX век"
+                    ],
+                    "fi": [
+                        "1900-luku"
+                    ],
+                    "pt": [
+                        "Século XX"
+                    ],
+                    "bg": [
+                        "20 век"
+                    ],
+                    "lt": [
+                        "XX amžius"
+                    ],
+                    "lv": [
+                        "20. gadsimts"
+                    ],
+                    "hr": [
+                        "20. stoljeće"
+                    ],
+                    "fr": [
+                        "XXe siècle"
+                    ],
+                    "hu": [
+                        "20. század"
+                    ],
+                    "sk": [
+                        "20. storočie"
+                    ],
+                    "sl": [
+                        "20. stoletje"
+                    ],
+                    "ga": [
+                        "20ú haois"
+                    ],
+                    "ca": [
+                        "Segle XX"
+                    ],
+                    "sv": [
+                        "1900-talet"
+                    ],
+                    "el": [
+                        "20ός αιώνας"
+                    ],
+                    "en": [
+                        "20th century"
+                    ],
+                    "it": [
+                        "XX secolo"
+                    ],
+                    "es": [
+                        "Siglo XX"
+                    ],
+                    "et": [
+                        "20. sajand"
+                    ],
+                    "eu": [
+                        "XX. mendea"
+                    ],
+                    "cs": [
+                        "20. století"
+                    ],
+                    "pl": [
+                        "XX wiek"
+                    ],
+                    "ro": [
+                        "Secolul al XX-lea"
+                    ],
+                    "da": [
+                        "20. århundrede"
+                    ],
+                    "nl": [
+                        "20e eeuw"
+                    ]
+                },
+                "altLabel": {
+                    "ru": [
+                        "20 век"
+                    ],
+                    "sv": [
+                        "20:e århundradet",
+                        "20:e seklet",
+                        "1900-tal",
+                        "1900-talet (århundrade)",
+                        "1900-talet (sekel)"
+                    ],
+                    "pt": [
+                        "Século 20",
+                        "Século vinte",
+                        "Periodo 1901-2000",
+                        "Ciclo (1901-2000)"
+                    ],
+                    "en": [
+                        "20th-century",
+                        "20th-century",
+                        "Twentieth century",
+                        "The past century",
+                        "History, 20th Century",
+                        "XX Century"
+                    ],
+                    "it": [
+                        "Novecento",
+                        "20° secolo",
+                        "'900",
+                        "Novecento"
+                    ],
+                    "fr": [
+                        "20e siècle"
+                    ],
+                    "es": [
+                        "Siglo 20",
+                        "El siglo pasado",
+                        "Siglo veinte",
+                        "Siglo XX después de Cristo",
+                        "Siglo XX d. C."
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1901-01-01"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "2000-12-31"
+                    ]
+                },
+                "owlSameAs": [
+                    "http://www.wikidata.org/entity/Q6927",
+                    "http://id.loc.gov/authorities/names/sh2002012476",
+                    "http://id.loc.gov/authorities/names/sh85139020",
+                    "http://id.nlm.nih.gov/mesh/D049673",
+                    "https://www.freebase.com/m/089_x",
+                    "https://g.co/kg/m/089_x",
+                    "http://id.nlm.nih.gov/mesh/K01.400.504.968",
+                    "http://vocab.getty.edu/aat/300404514",
+                    "http://id.worldcat.org/fast/1159810",
+                    "http://dbpedia.org/resource/20th_century"
+                ]
+            }
+        ],
+        "timestamp_created": "2016-02-08T14:10:39.267Z",
+        "timestamp_created_epoch": 1454940639267,
+        "timestamp_update": "2025-02-17T11:06:04.826Z",
+        "timestamp_update_epoch": 1739790364826,
+        "type": "VIDEO"
+    }
+}

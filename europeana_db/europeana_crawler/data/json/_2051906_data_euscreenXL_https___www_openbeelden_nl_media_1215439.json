@@ -1,0 +1,1375 @@
+{
+    "apikey": "iaceddupboa",
+    "success": true,
+    "statsDuration": 201,
+    "requestNumber": 999,
+    "object": {
+        "about": "/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439",
+        "aggregations": [
+            {
+                "about": "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439",
+                "edmDataProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/4538"
+                    ]
+                },
+                "edmIsShownBy": "https://www.openbeelden.nl/files/12/15/1216118.1215443.WEEKNUMMER493-HRE0000DF1D_2207000_2285000.mp4",
+                "edmIsShownAt": "https://www.openbeelden.nl/media/1215439",
+                "edmObject": "https://www.openbeelden.nl/images/1220124/Wereldkampioenschappen_gewichtheffen_%280_39%29.png",
+                "edmProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/1607"
+                    ]
+                },
+                "edmRights": {
+                    "def": [
+                        "http://creativecommons.org/publicdomain/mark/1.0/"
+                    ]
+                },
+                "edmUgc": "false",
+                "aggregatedCHO": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439",
+                "webResources": [
+                    {
+                        "about": "https://www.openbeelden.nl/images/1220124/Wereldkampioenschappen_gewichtheffen_%280_39%29.png",
+                        "textAttributionSnippet": "(nl) Wereldkampioenschappen gewichtheffen - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439. (nl) Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/1215439. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='nl'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439' target='_blank' rel='noopener'>Wereldkampioenschappen gewichtheffen</a></dd><dt>Creator</dt><dd lang='nl'>Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/1215439' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "ebucoreHasMimeType": "image/png",
+                        "ebucoreFileByteSize": 104498,
+                        "ebucoreWidth": 360,
+                        "ebucoreHeight": 288,
+                        "edmHasColorSpace": "sRGB",
+                        "edmComponentColor": [
+                            "#000000",
+                            "#BDB76B",
+                            "#696969",
+                            "#DCDCDC",
+                            "#BC8F8F",
+                            "#C0C0C0"
+                        ],
+                        "ebucoreOrientation": "landscape"
+                    },
+                    {
+                        "about": "https://www.openbeelden.nl/files/12/15/1216118.1215443.WEEKNUMMER493-HRE0000DF1D_2207000_2285000.mp4",
+                        "textAttributionSnippet": "(nl) Wereldkampioenschappen gewichtheffen - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439. (nl) Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/1215439. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='nl'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439' target='_blank' rel='noopener'>Wereldkampioenschappen gewichtheffen</a></dd><dt>Creator</dt><dd lang='nl'>Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/1215439' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "dctermsIsReferencedBy": [
+                            "https://iiif.europeana.eu/presentation/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439/manifest"
+                        ],
+                        "edmCodecName": "h264",
+                        "ebucoreHasMimeType": "video/mp4",
+                        "ebucoreDuration": "78040",
+                        "ebucoreWidth": 720,
+                        "ebucoreHeight": 576,
+                        "ebucoreBitRate": 2064157,
+                        "ebucoreOrientation": "landscape",
+                        "ebucoreFrameRate": 25.0
+                    },
+                    {
+                        "about": "https://www.openbeelden.nl/media/1215439",
+                        "textAttributionSnippet": "(nl) Wereldkampioenschappen gewichtheffen - https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439. (nl) Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder). Nederlands Instituut voor Beeld & Geluid - https://www.openbeelden.nl/media/1215439. Public Domain Mark - http://creativecommons.org/publicdomain/mark/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='nl'><a href='http://data.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439' target='_blank' rel='noopener'>Wereldkampioenschappen gewichtheffen</a></dd><dt>Creator</dt><dd lang='nl'>Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)</dd><dt>Institution</dt><dd lang=''><a href='https://www.openbeelden.nl/media/1215439' target='_blank' rel='noopener'>Nederlands Instituut voor Beeld & Geluid</a></dd><dt>Country</dt><dd lang=''>Netherlands</dd><dt>Rights</dt><dd><a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='noopener'><span class='icon-pd'/>Public Domain Mark</a></dd></dl>",
+                        "ebucoreHasMimeType": "application/xhtml+xml",
+                        "ebucoreFileByteSize": 0
+                    },
+                    {
+                        "about": "https://iiif.europeana.eu/presentation/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439/manifest",
+                        "rdfType": "http://iiif.io/api/presentation/3#Manifest"
+                    }
+                ],
+                "dqvHasQualityAnnotation": [
+                    {
+                        "created": "2025-02-17T11:30:36.106908160Z",
+                        "target": [
+                            "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439"
+                        ],
+                        "body": "http://www.europeana.eu/schemas/epf/contentTier4"
+                    },
+                    {
+                        "created": "2025-02-17T11:30:36.106924253Z",
+                        "target": [
+                            "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439"
+                        ],
+                        "body": "http://www.europeana.eu/schemas/epf/metadataTierC"
+                    }
+                ]
+            }
+        ],
+        "concepts": [
+            {
+                "about": "http://www.wikidata.org/entity/Q83462",
+                "prefLabel": {
+                    "de": [
+                        "Gewichtheben"
+                    ],
+                    "fi": [
+                        "painonnosto"
+                    ],
+                    "ru": [
+                        "тяжёлая атлетика"
+                    ],
+                    "pt": [
+                        "halterofilismo"
+                    ],
+                    "bg": [
+                        "вдигане на тежести"
+                    ],
+                    "lt": [
+                        "sunkioji atletika"
+                    ],
+                    "lv": [
+                        "svarcelšana"
+                    ],
+                    "hr": [
+                        "dizanje utega"
+                    ],
+                    "fr": [
+                        "haltérophilie"
+                    ],
+                    "hu": [
+                        "súlyemelés"
+                    ],
+                    "sk": [
+                        "vzpieranie"
+                    ],
+                    "sl": [
+                        "olimpijsko dviganje uteži"
+                    ],
+                    "ca": [
+                        "halterofília"
+                    ],
+                    "sv": [
+                        "tyngdlyftning"
+                    ],
+                    "el": [
+                        "άρση βαρών"
+                    ],
+                    "en": [
+                        "weightlifting"
+                    ],
+                    "it": [
+                        "sollevamento pesi"
+                    ],
+                    "es": [
+                        "halterofilia"
+                    ],
+                    "et": [
+                        "tõstesport"
+                    ],
+                    "cs": [
+                        "vzpírání"
+                    ],
+                    "eu": [
+                        "Pisu-jasotze"
+                    ],
+                    "pl": [
+                        "podnoszenie ciężarów"
+                    ],
+                    "ro": [
+                        "haltere"
+                    ],
+                    "da": [
+                        "vægtløftning"
+                    ],
+                    "nl": [
+                        "gewichtheffen"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Sportart, bei der eine Langhantel durch Reißen oder Stoßen zur Hochstrecke gebracht wird"
+                    ],
+                    "fi": [
+                        "kilpaurheilulaji"
+                    ],
+                    "sv": [
+                        "individuell sport"
+                    ],
+                    "ru": [
+                        "олимпийский вид спорта (только поднятие тяжестей)"
+                    ],
+                    "pt": [
+                        "desporto de levantamento de pesos"
+                    ],
+                    "en": [
+                        "sport"
+                    ],
+                    "lv": [
+                        "sporta veids"
+                    ],
+                    "it": [
+                        "sport individuale dell'atletica pesante"
+                    ],
+                    "fr": [
+                        "sport"
+                    ],
+                    "hu": [
+                        "nehézatlétikai sportág"
+                    ],
+                    "es": [
+                        "deporte olímpico"
+                    ],
+                    "cs": [
+                        "individuální silový sport"
+                    ],
+                    "sl": [
+                        "šport, pri katerem se dviguje utež z dvigovanjem ali potiskanjem navzgor"
+                    ],
+                    "ro": [
+                        "sport individual"
+                    ],
+                    "ca": [
+                        "esport individual"
+                    ]
+                },
+                "broader": [
+                    "http://www.wikidata.org/entity/Q337979",
+                    "http://www.wikidata.org/entity/Q2755547",
+                    "http://www.wikidata.org/entity/Q114397581",
+                    "http://www.wikidata.org/entity/Q115728332",
+                    "http://www.wikidata.org/entity/Q31629",
+                    "http://www.wikidata.org/entity/Q212434",
+                    "http://www.wikidata.org/entity/Q47728"
+                ],
+                "related": [
+                    "http://www.wikidata.org/entity/Q363752",
+                    "http://www.wikidata.org/entity/Q13381376",
+                    "http://www.wikidata.org/entity/Q1043897",
+                    "http://www.wikidata.org/entity/Q2220762",
+                    "http://www.wikidata.org/entity/Q465453",
+                    "http://www.wikidata.org/entity/Q115728332",
+                    "http://www.wikidata.org/entity/Q16686611"
+                ],
+                "exactMatch": [
+                    "http://id.loc.gov/authorities/names/sh85145957",
+                    "http://id.ndl.go.jp/auth/ndlna/00575132",
+                    "http://id.nlm.nih.gov/mesh/D014891",
+                    "http://purl.org/bncf/tid/16559",
+                    "https://www.freebase.com/m/0849l",
+                    "https://g.co/kg/m/0849l",
+                    "http://id.nlm.nih.gov/mesh/I03.450.642.845.950",
+                    "http://vocab.getty.edu/aat/300254259",
+                    "http://iconclass.org/43C361",
+                    "http://www.yso.fi/onto/yso/p13924",
+                    "http://cv.iptc.org/newscodes/mediatopic/20001093",
+                    "http://dbpedia.org/resource/Olympic_weightlifting"
+                ]
+            },
+            {
+                "about": "http://data.europeana.eu/concept/3093",
+                "prefLabel": {
+                    "de": [
+                        "Gewichtheben"
+                    ],
+                    "fi": [
+                        "Painonnosto"
+                    ],
+                    "ru": [
+                        "Тяжёлая атлетика"
+                    ],
+                    "pt": [
+                        "Halterofilismo"
+                    ],
+                    "bg": [
+                        "Вдигане на тежести"
+                    ],
+                    "lt": [
+                        "Sunkioji atletika"
+                    ],
+                    "lv": [
+                        "Svarcelšana"
+                    ],
+                    "hr": [
+                        "Dizanje utega"
+                    ],
+                    "fr": [
+                        "Haltérophilie"
+                    ],
+                    "hu": [
+                        "Súlyemelés"
+                    ],
+                    "sk": [
+                        "Vzpieranie"
+                    ],
+                    "sl": [
+                        "Dviganje uteži"
+                    ],
+                    "ca": [
+                        "Halterofília"
+                    ],
+                    "sv": [
+                        "Tyngdlyftning"
+                    ],
+                    "el": [
+                        "Άρση βαρών"
+                    ],
+                    "en": [
+                        "Weightlifting"
+                    ],
+                    "it": [
+                        "Sollevamento pesi"
+                    ],
+                    "es": [
+                        "Halterofilia"
+                    ],
+                    "et": [
+                        "Tõstesport"
+                    ],
+                    "cs": [
+                        "Vzpírání"
+                    ],
+                    "eu": [
+                        "Pisu-jasotze"
+                    ],
+                    "pl": [
+                        "Podnoszenie ciężarów"
+                    ],
+                    "ro": [
+                        "Haltere"
+                    ],
+                    "da": [
+                        "Vægtløftning"
+                    ],
+                    "nl": [
+                        "Gewichtheffen"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Sportart, bei der eine Langhantel durch Reißen oder Stoßen zur Hochstrecke gebracht wird"
+                    ],
+                    "fi": [
+                        "Kilpaurheilulaji"
+                    ],
+                    "sv": [
+                        "Individuell sport"
+                    ],
+                    "ru": [
+                        "Олимпийский вид спорта (только поднятие тяжестей)"
+                    ],
+                    "pt": [
+                        "Desporto de levantamento de pesos"
+                    ],
+                    "en": [
+                        "Sport"
+                    ],
+                    "it": [
+                        "Sport individuale dell'atletica pesante"
+                    ],
+                    "fr": [
+                        "Sport"
+                    ],
+                    "hu": [
+                        "Nehézatlétikai sportág"
+                    ],
+                    "es": [
+                        "Deporte olímpico"
+                    ],
+                    "cs": [
+                        "Individuální silový sport"
+                    ],
+                    "sl": [
+                        "Šport, pri katerem se dviguje utež z dvigovanjem ali potiskanjem navzgor"
+                    ],
+                    "ro": [
+                        "Sport individual"
+                    ],
+                    "ca": [
+                        "Esport individual"
+                    ]
+                },
+                "exactMatch": [
+                    "http://www.wikidata.org/entity/Q83462",
+                    "http://id.loc.gov/authorities/names/sh85145957",
+                    "http://id.ndl.go.jp/auth/ndlna/00575132",
+                    "http://id.nlm.nih.gov/mesh/D014891",
+                    "http://purl.org/bncf/tid/16559",
+                    "https://www.freebase.com/m/0849l",
+                    "https://g.co/kg/m/0849l",
+                    "http://id.nlm.nih.gov/mesh/I03.450.642.845.950",
+                    "http://vocab.getty.edu/aat/300254259",
+                    "http://iconclass.org/43C361",
+                    "http://www.yso.fi/onto/yso/p13924",
+                    "http://cv.iptc.org/newscodes/mediatopic/20001093",
+                    "http://dbpedia.org/resource/Olympic_weightlifting"
+                ]
+            },
+            {
+                "about": "http://vocab.getty.edu/aat/300263857",
+                "prefLabel": {
+                    "de": [
+                        "bewegtes Bild"
+                    ],
+                    "pt": [
+                        "imagens em movimento"
+                    ],
+                    "en": [
+                        "moving images"
+                    ],
+                    "es": [
+                        "imágenes en movimiento"
+                    ],
+                    "nl": [
+                        "bewegende beelden"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "bewegte Bilder"
+                    ],
+                    "pt": [
+                        "imagem em movimento"
+                    ],
+                    "en": [
+                        "moving image"
+                    ],
+                    "es": [
+                        "fotografía en movimiento",
+                        "imagen en movimiento"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Visuelles Werk, in der das Bild durch einen optischen Trick wie bewegt erscheint. Zu den Medien bewegter Bilder zählen Filme, Videoaufnahmen, Daumenkinos und einige optische Spielzeuge wie Zoetrope."
+                    ],
+                    "pt": [
+                        "Obras visuais nas quais a imagem, por meio de um truque óptico, parece estar em movimento. Os meios para imagens em movimento incluem ilustrações em movimento, gravações em vídeo e alguns brinquedos ópticos como zootrópios."
+                    ],
+                    "en": [
+                        "Visual works in which the image, by an optical trick, appears to be in motion.  Media for moving images include motion pictures, video recordings, flip books, and some optical toys such as zoetropes."
+                    ],
+                    "es": [
+                        "Obras visuales en donde la imagen parece estar en movimiento, por medio de un truco visual. Medios para imágenes en movimiento que incluyen películas cinematográficas, grabaciones de video, historia en imágenes y algunos juguetes ópticos tal como el zoetropo."
+                    ],
+                    "nl": [
+                        "Beeldmateriaal waarin het beeld door een optische kunstgreep in beweging lijkt. Media voor bewegende beelden zijn films, video’s, flip books en bepaalde vormen van optisch speelgoed zoals zoëtropen."
+                    ]
+                },
+                "broader": [
+                    "http://vocab.getty.edu/aat/300191086"
+                ],
+                "exactMatch": [
+                    "http://www.wikidata.org/entity/Q10301427"
+                ]
+            }
+        ],
+        "edmDatasetName": [
+            "2051906_Ag_EU_EUscreen_1019"
+        ],
+        "europeanaAggregation": {
+            "about": "/aggregation/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439",
+            "aggregatedCHO": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439",
+            "edmCountry": {
+                "def": [
+                    "Netherlands"
+                ]
+            },
+            "edmLanguage": {
+                "def": [
+                    "nl"
+                ]
+            },
+            "edmPreview": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.openbeelden.nl%2Fimages%2F1220124%2FWereldkampioenschappen_gewichtheffen_%25280_39%2529.png&type=VIDEO",
+            "edmLandingPage": "https://www.europeana.eu/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439"
+        },
+        "europeanaCollectionName": [
+            "2051906_Ag_EU_EUscreen_1019"
+        ],
+        "europeanaCompleteness": 10,
+        "organizations": [
+            {
+                "about": "http://data.europeana.eu/organization/4538",
+                "prefLabel": {
+                    "en": [
+                        "Netherlands Institute for Sound & Vision"
+                    ],
+                    "nl": [
+                        "Nederlands Instituut voor Beeld & Geluid"
+                    ]
+                }
+            },
+            {
+                "about": "http://data.europeana.eu/organization/1607",
+                "prefLabel": {
+                    "en": [
+                        "EUscreen"
+                    ]
+                }
+            }
+        ],
+        "places": [
+            {
+                "about": "https://sws.geonames.org/9408659/",
+                "prefLabel": {
+                    "def": [
+                        "Western Europe"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "Westeuropa"
+                    ],
+                    "ru": [
+                        "Западная Европа"
+                    ],
+                    "pt": [
+                        "Europa Ocidental"
+                    ],
+                    "lt": [
+                        "Vakarų Europa"
+                    ],
+                    "en": [
+                        "Western Europe"
+                    ],
+                    "it": [
+                        "Europa occidentale"
+                    ],
+                    "fr": [
+                        "Europe de l'Ouest"
+                    ],
+                    "es": [
+                        "Europa Occidental"
+                    ],
+                    "nl": [
+                        "West-Europa"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/6255148/"
+                    ]
+                },
+                "latitude": 50.21909,
+                "longitude": 7.42676,
+                "owlSameAs": [
+                    "http://dbpedia.org/resource/Western_Europe"
+                ]
+            },
+            {
+                "about": "https://sws.geonames.org/12503661/",
+                "prefLabel": {
+                    "def": [
+                        "Schengen Area"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "Schengen-Raum"
+                    ],
+                    "en": [
+                        "Schengen Area"
+                    ],
+                    "fr": [
+                        "Espace Schengen"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/6295630/"
+                    ]
+                },
+                "latitude": 49.47,
+                "longitude": 6.36,
+                "owlSameAs": [
+                    "http://dbpedia.org/resource/Schengen_Area"
+                ]
+            },
+            {
+                "about": "https://sws.geonames.org/6695072/",
+                "prefLabel": {
+                    "def": [
+                        "European Union"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "Europäische Union"
+                    ],
+                    "no": [
+                        "Den europeiske union"
+                    ],
+                    "ru": [
+                        "Европейский союз"
+                    ],
+                    "fi": [
+                        "Euroopan unioni"
+                    ],
+                    "pt": [
+                        "União Europeia"
+                    ],
+                    "bg": [
+                        "Европейски съюз"
+                    ],
+                    "lt": [
+                        "Europos Sąjunga"
+                    ],
+                    "hr": [
+                        "Europska unija"
+                    ],
+                    "lv": [
+                        "Eiropas Savienība"
+                    ],
+                    "fr": [
+                        "Union Européenne"
+                    ],
+                    "hu": [
+                        "Európai Unió"
+                    ],
+                    "sk": [
+                        "Európska únia"
+                    ],
+                    "sl": [
+                        "Evropska unija"
+                    ],
+                    "ga": [
+                        "An tAontas Eorpach"
+                    ],
+                    "ca": [
+                        "Unió Europea"
+                    ],
+                    "sv": [
+                        "Europeiska unionen"
+                    ],
+                    "el": [
+                        "Ευρωπαϊκή Ένωση"
+                    ],
+                    "mt": [
+                        "Unjoni Ewropea"
+                    ],
+                    "en": [
+                        "European Union"
+                    ],
+                    "it": [
+                        "Unione europea"
+                    ],
+                    "es": [
+                        "Unión Europea"
+                    ],
+                    "et": [
+                        "Euroopa Liit"
+                    ],
+                    "cs": [
+                        "Evropská unie"
+                    ],
+                    "pl": [
+                        "Unia Europejska"
+                    ],
+                    "ro": [
+                        "Uniunea Europeană"
+                    ],
+                    "da": [
+                        "Den Europæiske Union"
+                    ],
+                    "nl": [
+                        "Europese Unie"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/6255148/"
+                    ]
+                },
+                "latitude": 50.83857,
+                "longitude": 4.37599,
+                "owlSameAs": [
+                    "http://dbpedia.org/resource/European_Union"
+                ]
+            },
+            {
+                "about": "http://data.europeana.eu/place/106",
+                "prefLabel": {
+                    "de": [
+                        "Königreich der Niederlande"
+                    ],
+                    "ru": [
+                        "Королевство Нидерландов"
+                    ],
+                    "fi": [
+                        "Alankomaiden kuningaskunta"
+                    ],
+                    "pt": [
+                        "Reino dos Países Baixos"
+                    ],
+                    "bg": [
+                        "Кралство Нидерландия"
+                    ],
+                    "lt": [
+                        "Nyderlandai"
+                    ],
+                    "lv": [
+                        "Nīderlandes Karaliste"
+                    ],
+                    "hr": [
+                        "Kraljevina Nizozemska"
+                    ],
+                    "fr": [
+                        "Royaume des Pays-Bas"
+                    ],
+                    "hu": [
+                        "Holland Királyság"
+                    ],
+                    "sk": [
+                        "Holandské kráľovstvo"
+                    ],
+                    "sl": [
+                        "Kraljevina Nizozemska"
+                    ],
+                    "ga": [
+                        "Ríocht na hÍsiltíre"
+                    ],
+                    "ca": [
+                        "Regne dels Països Baixos"
+                    ],
+                    "sv": [
+                        "Konungariket Nederländerna"
+                    ],
+                    "mt": [
+                        "Renju tan-Netherlands"
+                    ],
+                    "el": [
+                        "Βασίλειο των Κάτω Χωρών"
+                    ],
+                    "en": [
+                        "Kingdom of the Netherlands"
+                    ],
+                    "it": [
+                        "Regno dei Paesi Bassi"
+                    ],
+                    "es": [
+                        "Reino de los Países Bajos"
+                    ],
+                    "et": [
+                        "Madalmaade Kuningriik"
+                    ],
+                    "cs": [
+                        "Nizozemské království"
+                    ],
+                    "eu": [
+                        "Herbehereetako Erresuma"
+                    ],
+                    "pl": [
+                        "Holandia"
+                    ],
+                    "ro": [
+                        "Regatul Țărilor de Jos"
+                    ],
+                    "da": [
+                        "Kongeriget Nederlandene"
+                    ],
+                    "nl": [
+                        "Koninkrijk der Nederlanden"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "NL",
+                        "Niederlande"
+                    ],
+                    "sv": [
+                        "Kungariket Nederländerna"
+                    ],
+                    "ru": [
+                        "Нидерланды",
+                        "Голландия"
+                    ],
+                    "pt": [
+                        "Países Baixos",
+                        "NL"
+                    ],
+                    "mt": [
+                        "Netherlands",
+                        "Olanda",
+                        "Pajjiżi Baxxi",
+                        "Renju tal-Pajjiżi Baxxi"
+                    ],
+                    "el": [
+                        "Βασίλειο της Ολλανδίας"
+                    ],
+                    "en": [
+                        "The Netherlands",
+                        "Netherlands",
+                        "NL"
+                    ],
+                    "it": [
+                        "Paesi Bassi",
+                        "NL"
+                    ],
+                    "fr": [
+                        "NL",
+                        "Royaume des Pays-Bas",
+                        "Pays-Bas"
+                    ],
+                    "hu": [
+                        "Hollandia"
+                    ],
+                    "es": [
+                        "Koninkrijk der Nederlanden",
+                        "Reino de Los Paises Bajos",
+                        "Paises Bajos",
+                        "NL"
+                    ],
+                    "eu": [
+                        "Herbeheretako Erresuma"
+                    ],
+                    "sk": [
+                        "Holandsko"
+                    ],
+                    "ga": [
+                        "An Ísiltír",
+                        "An Ollainn"
+                    ],
+                    "pl": [
+                        "Niderlandy",
+                        "Królestwo Niderlandów",
+                        "Nederland",
+                        "NL",
+                        "Koninkrijk der Nederlanden"
+                    ],
+                    "ro": [
+                        "Țările de Jos",
+                        "Regatul Ţărilor de Jos",
+                        "Netherlands",
+                        "Ţările de Jos",
+                        "Tarile de Jos"
+                    ],
+                    "da": [
+                        "Koninkrijk der Nederlanden"
+                    ],
+                    "nl": [
+                        "Nederland",
+                        "NL",
+                        "NED"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Die Niederlande inklusive Aruba, Curaçao und Sint Maarten"
+                    ],
+                    "fi": [
+                        "Valtioliitto Euroopassa ja Karibialla"
+                    ],
+                    "ru": [
+                        "Составное суверенное государство; с 16 марта 1815, в Западной Европе и Карибском бассейне"
+                    ],
+                    "sv": [
+                        "Består av Aruba, Curaçao, Nederländerna och Sint Maarten"
+                    ],
+                    "pt": [
+                        "Estado soberano e monarquia constitucional"
+                    ],
+                    "bg": [
+                        "Държава в Европа и Карибите"
+                    ],
+                    "mt": [
+                        "Stat sovran fl-Ewropa tal-Punent u fil-Karibew"
+                    ],
+                    "el": [
+                        "Ανεξάρτητο κράτος που αποτελείται από την Αρούμπα, Κουρακάο, Άγιο Μαρτίνο, και τις Κάτω Χώρες"
+                    ],
+                    "en": [
+                        "Sovereign state and constitutional monarchy"
+                    ],
+                    "it": [
+                        "Stato sovrano dell'Unione Europea con territori in Europa e nei Caraibi"
+                    ],
+                    "fr": [
+                        "Pays d'Europe occidentale"
+                    ],
+                    "hu": [
+                        "Állam Nyugat-Európában és a Karib-térségben"
+                    ],
+                    "es": [
+                        "Estado federado miembro de la Unión Europea y formado por Aruba, Curazao, Sint Maarten y los Países Bajos"
+                    ],
+                    "cs": [
+                        "Stát sestávající z evropského Nizozemska a ostrovů v Karibiku"
+                    ],
+                    "pl": [
+                        "Państwo w Europie Zachodniej"
+                    ],
+                    "ro": [
+                        "Stat în Europa de Vest"
+                    ],
+                    "da": [
+                        "Kongeriget Nederlandene bestående af Aruba, Curaçao, Nederlandene og Sint Maarten"
+                    ],
+                    "ca": [
+                        "Federació formada per Aruba, Curaçao, Sint Maarten i els mateixos Països Baixos"
+                    ],
+                    "nl": [
+                        "Soevereine staat bestaande uit Aruba, Curaçao, Nederland en Sint Maarten"
+                    ]
+                },
+                "latitude": 52.366665,
+                "longitude": 4.883333,
+                "owlSameAs": [
+                    "http://www.wikidata.org/entity/Q29999",
+                    "http://viaf.org/viaf/156652814",
+                    "http://data.bnf.fr/ark:/12148/cb12497447f",
+                    "http://www.idref.fr/034191089/id",
+                    "https://www.freebase.com/m/049nq",
+                    "https://g.co/kg/m/049nq",
+                    "https://sws.geonames.org/2750405/",
+                    "http://nomisma.org/id/kingdom_of_the_netherlands",
+                    "http://dbpedia.org/resource/Kingdom_of_the_Netherlands"
+                ]
+            },
+            {
+                "about": "https://sws.geonames.org/2750405/",
+                "prefLabel": {
+                    "de": [
+                        "Niederlande"
+                    ],
+                    "no": [
+                        "Nederland"
+                    ],
+                    "ru": [
+                        "Нидерланды"
+                    ],
+                    "fi": [
+                        "Alankomaat"
+                    ],
+                    "pt": [
+                        "Países Baixos"
+                    ],
+                    "bg": [
+                        "Нидерландия"
+                    ],
+                    "lt": [
+                        "Nyderlandai"
+                    ],
+                    "hr": [
+                        "Nizozemska"
+                    ],
+                    "lv": [
+                        "Nīderlande"
+                    ],
+                    "fr": [
+                        "Pays-Bas"
+                    ],
+                    "hu": [
+                        "Hollandia"
+                    ],
+                    "sk": [
+                        "Holandsko"
+                    ],
+                    "sl": [
+                        "Nizozemska"
+                    ],
+                    "ga": [
+                        "an Ísiltír"
+                    ],
+                    "ca": [
+                        "Països Baixos"
+                    ],
+                    "sv": [
+                        "Nederländerna"
+                    ],
+                    "el": [
+                        "Ολλανδία"
+                    ],
+                    "mt": [
+                        "in-Netherlands"
+                    ],
+                    "en": [
+                        "The Netherlands"
+                    ],
+                    "it": [
+                        "Paesi Bassi"
+                    ],
+                    "es": [
+                        "Holanda",
+                        "Países Bajos"
+                    ],
+                    "et": [
+                        "Holland",
+                        "Madalmaad"
+                    ],
+                    "cs": [
+                        "Nizozemsko"
+                    ],
+                    "pl": [
+                        "Holandia"
+                    ],
+                    "ro": [
+                        "Țările de Jos"
+                    ],
+                    "da": [
+                        "Holland"
+                    ],
+                    "nl": [
+                        "Nederland"
+                    ]
+                },
+                "altLabel": {
+                    "pt": [
+                        "Holanda"
+                    ],
+                    "lt": [
+                        "Olandija"
+                    ],
+                    "en": [
+                        "Holland",
+                        "Kingdom of the Netherlands",
+                        "Netherlands"
+                    ],
+                    "it": [
+                        "Olanda"
+                    ],
+                    "ro": [
+                        "Olanda"
+                    ],
+                    "nl": [
+                        "Hollandt",
+                        "Koninkrijk der Nederlanden",
+                        "Nederlandt"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/6695072/",
+                        "https://sws.geonames.org/12503661/",
+                        "https://sws.geonames.org/9408659/",
+                        "https://sws.geonames.org/12718413/"
+                    ]
+                },
+                "latitude": 52.25,
+                "longitude": 5.75,
+                "owlSameAs": [
+                    "http://dbpedia.org/resource/Netherlands"
+                ]
+            },
+            {
+                "about": "https://sws.geonames.org/12718413/",
+                "prefLabel": {
+                    "en": [
+                        "Eurozone"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "Eurozone"
+                    ],
+                    "en": [
+                        "Euro area"
+                    ],
+                    "fr": [
+                        "Zone euro"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/6295630/"
+                    ]
+                },
+                "latitude": 50.10841,
+                "longitude": 8.70177
+            }
+        ],
+        "providedCHOs": [
+            {
+                "about": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439"
+            }
+        ],
+        "proxies": [
+            {
+                "about": "/proxy/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439",
+                "dcIdentifier": {
+                    "def": [
+                        "http://mint-projects.image.ntua.gr/data/euscreenXL/https://www.openbeelden.nl/media/1215439"
+                    ]
+                },
+                "dcLanguage": {
+                    "def": [
+                        "nl"
+                    ]
+                },
+                "dcSubject": {
+                    "def": [
+                        "http://data.europeana.eu/concept/3093"
+                    ]
+                },
+                "dctermsCreated": {
+                    "def": [
+                        "#1949-08-29"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "def": [
+                        "http://data.europeana.eu/place/106"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/europeana/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439"
+                ],
+                "proxyFor": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439",
+                "lineage": [
+                    "/proxy/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439"
+                ],
+                "europeanaProxy": true
+            },
+            {
+                "about": "/proxy/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439",
+                "dcCreator": {
+                    "nl": [
+                        "Polygoon Hollands Nieuws (producent) / Nederlands Instituut voor Beeld en Geluid (beheerder)"
+                    ]
+                },
+                "dcDescription": {
+                    "nl": [
+                        "Weekjournaal van Polygoon Hollands Nieuws van week 36 uit 1949.",
+                        "In het Circus van Scheveningen worden de wereldkampioeschappen gewichtheffen gehouden. De Egyptenaar Fayad verovert de titel in de klasse vedergewicht; de Amerikaan Benjamin Davis bij het zwaargewicht."
+                    ]
+                },
+                "dcIdentifier": {
+                    "def": [
+                        "PGM4012053"
+                    ]
+                },
+                "dcLanguage": {
+                    "en": [
+                        "Dutch"
+                    ]
+                },
+                "dcPublisher": {
+                    "def": [
+                        "https://www.openbeelden.nl/users/beeldengeluid"
+                    ],
+                    "nl": [
+                        "Nederlands Instituut voor Beeld en Geluid"
+                    ]
+                },
+                "dcSource": {
+                    "en": [
+                        "Open Images"
+                    ],
+                    "nl": [
+                        "Open Beelden"
+                    ]
+                },
+                "dcSubject": {
+                    "def": [
+                        "http://www.wikidata.org/entity/Q83462"
+                    ]
+                },
+                "dcTitle": {
+                    "nl": [
+                        "Wereldkampioenschappen gewichtheffen"
+                    ]
+                },
+                "dcType": {
+                    "def": [
+                        "http://vocab.getty.edu/aat/300263857"
+                    ]
+                },
+                "dctermsCreated": {
+                    "def": [
+                        "1949-08-29"
+                    ]
+                },
+                "dctermsExtent": {
+                    "def": [
+                        "PT1M18S"
+                    ]
+                },
+                "dctermsIsPartOf": {
+                    "en": [
+                        "Europeana Sport"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "def": [
+                        "https://sws.geonames.org/2750405/"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/provider/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439"
+                ],
+                "proxyFor": "/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_1215439",
+                "edmType": "VIDEO",
+                "europeanaProxy": false
+            }
+        ],
+        "timespans": [
+            {
+                "about": "#1949-08-29",
+                "prefLabel": {
+                    "zxx": [
+                        "1949-08-29"
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1949-08-29"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "1949-08-29"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "http://data.europeana.eu/timespan/20"
+                    ]
+                },
+                "skosNotation": {
+                    "def": [
+                        "1949-08-29"
+                    ]
+                }
+            },
+            {
+                "about": "http://data.europeana.eu/timespan/20",
+                "prefLabel": {
+                    "de": [
+                        "20. Jahrhundert"
+                    ],
+                    "ru": [
+                        "XX век"
+                    ],
+                    "fi": [
+                        "1900-luku"
+                    ],
+                    "pt": [
+                        "Século XX"
+                    ],
+                    "bg": [
+                        "20 век"
+                    ],
+                    "lt": [
+                        "XX amžius"
+                    ],
+                    "lv": [
+                        "20. gadsimts"
+                    ],
+                    "hr": [
+                        "20. stoljeće"
+                    ],
+                    "fr": [
+                        "XXe siècle"
+                    ],
+                    "hu": [
+                        "20. század"
+                    ],
+                    "sk": [
+                        "20. storočie"
+                    ],
+                    "sl": [
+                        "20. stoletje"
+                    ],
+                    "ga": [
+                        "20ú haois"
+                    ],
+                    "ca": [
+                        "Segle XX"
+                    ],
+                    "sv": [
+                        "1900-talet"
+                    ],
+                    "el": [
+                        "20ός αιώνας"
+                    ],
+                    "en": [
+                        "20th century"
+                    ],
+                    "it": [
+                        "XX secolo"
+                    ],
+                    "es": [
+                        "Siglo XX"
+                    ],
+                    "et": [
+                        "20. sajand"
+                    ],
+                    "eu": [
+                        "XX. mendea"
+                    ],
+                    "cs": [
+                        "20. století"
+                    ],
+                    "pl": [
+                        "XX wiek"
+                    ],
+                    "ro": [
+                        "Secolul al XX-lea"
+                    ],
+                    "da": [
+                        "20. århundrede"
+                    ],
+                    "nl": [
+                        "20e eeuw"
+                    ]
+                },
+                "altLabel": {
+                    "ru": [
+                        "20 век"
+                    ],
+                    "sv": [
+                        "20:e århundradet",
+                        "20:e seklet",
+                        "1900-tal",
+                        "1900-talet (århundrade)",
+                        "1900-talet (sekel)"
+                    ],
+                    "pt": [
+                        "Século 20",
+                        "Século vinte",
+                        "Periodo 1901-2000",
+                        "Ciclo (1901-2000)"
+                    ],
+                    "en": [
+                        "20th-century",
+                        "20th-century",
+                        "Twentieth century",
+                        "The past century",
+                        "History, 20th Century",
+                        "XX Century"
+                    ],
+                    "it": [
+                        "Novecento",
+                        "20° secolo",
+                        "'900",
+                        "Novecento"
+                    ],
+                    "fr": [
+                        "20e siècle"
+                    ],
+                    "es": [
+                        "Siglo 20",
+                        "El siglo pasado",
+                        "Siglo veinte",
+                        "Siglo XX después de Cristo",
+                        "Siglo XX d. C."
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1901-01-01"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "2000-12-31"
+                    ]
+                },
+                "owlSameAs": [
+                    "http://www.wikidata.org/entity/Q6927",
+                    "http://id.loc.gov/authorities/names/sh2002012476",
+                    "http://id.loc.gov/authorities/names/sh85139020",
+                    "http://id.nlm.nih.gov/mesh/D049673",
+                    "https://www.freebase.com/m/089_x",
+                    "https://g.co/kg/m/089_x",
+                    "http://id.nlm.nih.gov/mesh/K01.400.504.968",
+                    "http://vocab.getty.edu/aat/300404514",
+                    "http://id.worldcat.org/fast/1159810",
+                    "http://dbpedia.org/resource/20th_century"
+                ]
+            }
+        ],
+        "timestamp_created": "2021-04-26T07:37:20.398Z",
+        "timestamp_created_epoch": 1619422640398,
+        "timestamp_update": "2025-02-17T11:06:04.826Z",
+        "timestamp_update_epoch": 1739790364826,
+        "type": "VIDEO"
+    }
+}
