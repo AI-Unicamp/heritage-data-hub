@@ -1,0 +1,13 @@
+---
+version: "3.9"
+services:
+  ema:
+    build: .
+    tty: true
+    stdin_open: true
+    container_name: ema-project
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    volumes:
+      - ${PWD}/data:/src/data
