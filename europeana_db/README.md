@@ -1,105 +1,200 @@
-# Europeana-DB
+# **Europeana-DB**
 
-Europeana-DB is a dataset designed for AI research and development, focusing on
-image captioning and analysis of cultural heritage object (CHO). The dataset
-includes a curated collection of images sourced from the Europeana API, along
-with their associated metadata and descriptions. The modular design of
-Europeana-DB allows for expansion of cultural heritage object categories, while
-specifically excluding certain types like books, paintings, and texts, as
-outlined in the project configuration (see constants.py).
+Europeana-DB is a dataset designed for **AI research and development**, focusing
+on **image captioning and cultural heritage object (CHO) analysis**. The dataset
+includes a collection of objects metadata sourced from the **Europeana API**.
 
-## Key Features
+## **🚀 Key Features**
 
-- **CHO Coverage**: The dataset is composed of cultural heritage objects,
-  including but not limited to furniture, textiles, artifacts, and other media
-  available in the Europeana official database.
-- **Image Captioning**: Specifically designed to generate data to train AI
-  models.
-- **Modular and Scalable**: Structured to integrate additional cultural heritage
-  object categories in future iterations.
-- **Automated Data Pipeline**: Includes tools for automated data retrieval,
-  processing, and preparation.
-- **Customizable Filters**: Easily adjust which categories to include or exclude
-  using the `constants.py` configuration.
+- **CHO Coverage**: The dataset includes all types of
+  **cultural heritage objects** tagged with open and media on the  
+  Europeana Database.
+- **Image Captioning**: Designed to generate to be a base for **training
+  AI models**.
+- **Automated Data Pipeline**: Fully automated **data retrieval, processing,  
+  and storage**.
+- **Customizable Filters**: Configure included/excluded categories via  
+  **`constants.py`**.
+- **Dockerized Execution**: Run the pipeline **inside a container** with  
+  **MongoDB integration**.
+- **Persistent Storage**: **Data is stored locally** using **Docker volumes**.
 
-## Project Structure
+---
 
-```
-heritage-data-hub
-└── europeana_db
-    ├── .env               # Environment variables (set here your Europeana API
-    │                      # Key)
-    ├── .gitignore
-    ├── dataset            # Folder for storing processed datasets
-    ├── europeana_crawler  # Module for data retrieval from the Europeana API
-    │   ├── config         # Configuration files
-    │   ├── data           # Raw data storage
-    │   ├── europeana      # API interaction scripts
-    │   ├── helpers        # Helper utilities and functions
-    │   ├── main.py        # Main script for data downloading
-    │   ├── notebooks      # Jupyter notebooks for exploration
-    │   └── tests          # Unit and integration tests
-    ├── europeana_preprocessor # Data preprocessing and cleaning module
-    ├── poetry.lock
-    ├── pyproject.toml
-    └── README.md
+## **📁 Project Structure**
+
+```text
+europena_db
+├── europeana_crawler
+│   ├── config
+│   ├── europeana
+│   ├── helpers
+│   ├── main.py
+│   ├── notebooks
+│   └── tests
+├── Dockerfile
+├── docker-compose.yml
+├── poetry.lock
+├── pyproject.toml
+└── README.md
 ```
 
-## How to Install and Set Up
+---
 
-### 1. Install Poetry
+## **⚡ Quick Start Guide**
 
-Ensure you have Poetry installed:
+### **1️⃣ Run the Pipeline with Docker**
+
+> **This method runs the full pipeline inside a container with MongoDB support.**
+
+#### **🚀 Step 1: Build and Start Containers**
+
+```sh
+docker-compose up -d --build
+```
+
+This will:
+
+- Build and start **MongoDB** (`europeana-mongo`).
+- Build and start **Europeana Crawler** (`europeanadb_vagner`).
+- Automatically begin downloading **cultural heritage objects**.
+
+#### **🔍 Step 2: Monitor the Logs**
+
+```sh
+docker logs -f europeanadb
+```
+
+This will **stream logs** to monitor the downloading and database insertion  
+process.
+
+#### **Step 3: Stop the Containers**
+
+```sh
+docker-compose down
+```
+
+This will **stop all containers** but **keep downloaded data**.
+
+---
+
+## **🛠️ Manual Installation (Without Docker)**
+
+> **If you prefer to run without Docker, follow these steps:**
+
+### **1️⃣ Install Poetry**
+
+Ensure **Poetry** is installed:
 
 ```sh
 pip install poetry
 ```
 
-### 2. Install Dependencies
+### **2️⃣ Install Dependencies**
 
-Navigate to the project directory and install dependencies using Poetry:
+Navigate to the **project directory**:
 
 ```sh
-cd europeana_db
+cd europeanadb
 poetry install
 ```
 
-### 3. Activate the Virtual Environment
+### **3️⃣ Activate the Virtual Environment**
 
 ```sh
 poetry shell
 ```
 
-## How to Execute
+---
 
-To execute the Europeana Dataset Downloader, run the following command from the
-`europeana_crawler` directory:
+## **Running the Data Crawler**
+
+Run the **Europeana Dataset Downloader** manually:
 
 ```sh
 python main.py --limit 50
 ```
 
-### Options
+### **🛠 Options**
 
-- `--limit [LIMIT]` : Limits the number of items to download (default: 10).
-- `--all` : Downloads all available files, ignoring the `--limit` parameter.
+| Flag          | Description                                           |
+| ------------- | ----------------------------------------------------- |
+| `--limit [N]` | Limits the number of items to download (default: 10). |
+| `--all`       | Downloads all available items.                        |
 
-## Example
+### **📝 Example**
 
 ```sh
 python main.py --limit 100
 ```
 
-This command will download 100 items using the Europeana API and store the JSON
-metadata files in the `data` directory.
+> This downloads **100 items** from the **Europeana API** and stores metadata  
+> in the `data/` directory.
 
-## Future Plans
+---
 
-- Expand to more categories, while maintaining the exclusion of specified
-  `dcType`s (e.g., books, paintings, texts).
-- Implement advanced preprocessing and data augmentation techniques.
-- Enhance metadata enrichment using external linked data sources.
+## **🗄️ MongoDB Integration**
 
-## License
+**If running manually (without Docker), ensure MongoDB is running:**
 
-Europeana-DB is released under the MIT License.
+```sh
+sudo systemctl start mongod
+```
+
+Or start via Docker:
+
+```sh
+docker run -d --name europeana-mongo -p 27017:27017 mongo:latest
+```
+
+---
+
+## **📊 Database and Local Storage**
+
+> **Track the number of items in MongoDB and locally.**
+
+Every batch update prints:
+
+```
+MongoDB total: 5200 items | Local total: 5200 items
+```
+
+To **manually check MongoDB:**
+
+```sh
+docker exec -it europeana-mongo mongosh
+use europeana_db
+db.cultural_objects.countDocuments({})
+```
+
+---
+
+## **Cleaning Up Data**
+
+> **If you need to delete local files and reset MongoDB:**
+
+### **🗑️ Clear Local Data**
+
+```sh
+rm -rf europeanadb/data/
+```
+
+### **🗑️ Delete MongoDB Data**
+
+```sh
+docker-compose down -v
+```
+
+> This **removes MongoDB volumes** and deletes **all stored documents**.
+
+---
+
+## **Future Plans**
+
+- **Optimize MongoDB indexing** for faster searches.
+
+---
+
+## **📜 License**
+
+Europeana-DB is released under the **MIT License**.
