@@ -12,13 +12,11 @@ class TestEuropeanaAPI(unittest.TestCase):
     def test_search_furniture(self):
         """Test searching for 'Furniture' objects."""
         query = "Furniture"
-        rows = 5  # Fetch a small number of results for testing
+        rows = 5
 
         try:
-            # Perform API search
             response = self.api.search(query=query, rows=rows)
 
-            # Check if the response contains items
             self.assertIn("items", response)
             self.assertGreater(
                 len(response["items"]), 0, "No items found in the response"

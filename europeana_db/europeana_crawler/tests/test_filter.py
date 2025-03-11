@@ -22,7 +22,6 @@ EXCLUDED_DC_TYPES = [
     "Text",
 ]
 
-# Convert excluded types to lowercase for case-insensitive matching
 EXCLUDED_DC_TYPES = [item.lower() for item in EXCLUDED_DC_TYPES]
 
 # API URL for the test item with dcType Newspaper
@@ -39,7 +38,6 @@ def fetch_and_filter_item(api_url: str) -> None:
 
     item_data = response.json()
 
-    # 🔍 Debug: Output the structure of the JSON response
     print("\n🔍 Full JSON Response:")
     print(json.dumps(item_data, indent=2))
 
@@ -48,22 +46,19 @@ def fetch_and_filter_item(api_url: str) -> None:
         "about", "Unknown ID"
     )
 
-    # 🔥 Recursive function to find excluded `dcType`s with detailed debugging
+    # Recursive function to find excluded `dcType`s with detailed debugging
     def find_excluded_dctype(data, path=""):
         """Recursively search for excluded dcType values in the JSON data."""
         if isinstance(data, dict):
             for key, value in data.items():
                 new_path = f"{path}.{key}" if path else key
 
-                # Check if the current key is "dcType" and value contains an excluded type
                 if key == "dcType" and isinstance(value, dict):
                     dc_types = value.get("def", []) + value.get("en", [])
                     normalized_types = [dc_type.lower() for dc_type in dc_types]
 
-                    # Debug: Show all dcTypes found
                     print(f"🔍 Found dcType at {new_path}: {dc_types}")
 
-                    # Check for excluded types
                     for dc_type in normalized_types:
                         if any(
                             excluded_type in dc_type
@@ -72,7 +67,6 @@ def fetch_and_filter_item(api_url: str) -> None:
                             print(f"📰 Excluded type '{dc_type}' found in {new_path}")
                             return True
 
-                # Recursively search in nested structures
                 if find_excluded_dctype(value, new_path):
                     return True
 
@@ -83,19 +77,14 @@ def fetch_and_filter_item(api_url: str) -> None:
 
         return False
 
-    # Execute the recursive search
     should_exclude = find_excluded_dctype(item_data)
 
-    # Output the result with the correct item ID
     if should_exclude:
-        print(
-            f"📰 The item '{item_id}' contains an excluded dcType and will be excluded."
-        )
+        print(f"The item '{item_id}' contains an excluded dcType and will be excluded.")
     else:
         print(
-            f"✅ The item '{item_id}' does NOT contain an excluded dcType and will be included."
+            f"The item '{item_id}' does NOT contain an excluded dcType and will be included."
         )
 
 
-# Run the test
 fetch_and_filter_item(test_item_url)

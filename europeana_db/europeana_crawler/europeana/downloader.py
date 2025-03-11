@@ -1,285 +1,226 @@
-from concurrent.futures import ThreadPoolExecutor
+import asyncio
 import json
-import os
-from tqdm import tqdm
-from europeana.api import fetch_item_ids, fetch_item_metadata, load_cursor, save_cursor
-from helpers.constants import BATCH_SIZE, JSON_DIR, LOG_FILE, CACHE_FILE
+import time
+from os import makedirs, walk
+from os.path import exists, join
+
+import aiohttp
+from europeana.api import fetch_item_ids, fetch_item_metadata, load_cursor
+from helpers.cache_handler import load_cache, save_cache
+from helpers.constants import ANALYSIS_LOG, JSON_DIR, LOGS_DIR, MAX_CONCURRENT_REQUESTS
+from helpers.metadata_handler import save_metadata
+from helpers.mongo_handler import collection, insert_bulk_metadata
 
 
-def load_existing_ids():
-    """Load existing item IDs from the log file to avoid duplicates."""
-    if os.path.exists(LOG_FILE):
-        with open(LOG_FILE, "r", encoding="utf-8") as f:
-            return set(line.strip() for line in f.readlines())
-    return set()
+def save_cursor_cache(cursor, cursor_cache):
+    """Save cache for each cursor separately."""
+    makedirs(LOGS_DIR, exist_ok=True)
+    safe_cursor = cursor.replace("/", "_")
+    cache_file = join(LOGS_DIR, f"{safe_cursor}_cache.json")
+
+    with open(cache_file, "w", encoding="utf-8") as f:
+        json.dump(cursor_cache, f, indent=4)
+
+    print(f"💾 Cursor cache saved: {cache_file}")
 
 
-def load_cache():
-    """Load cache from JSON file, ensuring `item_ids` is always a list."""
-    if not os.path.exists(CACHE_FILE):
-        return {"downloaded_count": 0, "item_ids": []}  # ✅ Ensure it's a list
+async def fetch_and_save(session, item_id, cursor):
+    """Fetch metadata and save both locally and return for batch MongoDB insertion."""
+    metadata = await fetch_item_metadata(session, item_id)
 
-    with open(CACHE_FILE, "r", encoding="utf-8") as f:
-        cache = json.load(f)
+    if not metadata:
+        print(f"⚠️ No metadata returned for `{item_id}`. Skipping.")
 
-    # ✅ Ensure `item_ids` is a list before returning
-    if "item_ids" not in cache:
-        cache["item_ids"] = []
-    elif isinstance(cache["item_ids"], set):
-        cache["item_ids"] = list(cache["item_ids"])
-
-    return cache
-
-
-def save_cache(cache_data):
-    """Ensure item_ids is converted to a list before saving."""
-    cache_data["item_ids"] = list(cache_data.get("item_ids", []))  # ✅ Convert to list
-    with open(CACHE_FILE, "w", encoding="utf-8") as f:
-        json.dump(cache_data, f, indent=4)
-
-
-def save_ids_log(downloaded_ids):
-    """Append only successfully downloaded item IDs to the log file."""
-    cache = load_cache()  # Load cache from file
-    existing_ids = set(load_existing_ids())  # Convert existing IDs to a set
-    new_ids = [item_id for item_id in downloaded_ids if item_id not in existing_ids]
-
-    if new_ids:
-        # Append to ids.log
-        with open(LOG_FILE, "a", encoding="utf-8") as f:
-            for item_id in new_ids:
-                f.write(f"{item_id}\n")
-        print(f"📝 Added {len(new_ids)} new item IDs to log.")
-
-        # ✅ Ensure item_ids is stored as a **list**
-        if "item_ids" not in cache:
-            cache["item_ids"] = []  # Initialize if missing
-        elif isinstance(cache["item_ids"], set):
-            cache["item_ids"] = list(cache["item_ids"])  # Convert to list if it's a set
-
-        cache["item_ids"].extend(new_ids)  # ✅ Use .extend() for lists
-        save_cache(cache)  # Persist changes
-
-    else:
-        print("✅ No new IDs to add. Skipping log update.")
-
-
-def item_json_exists(item_id):
-    """Check if the JSON metadata file for an item already exists."""
-    safe_item_id = item_id.replace("/", "_")
-    file_path = os.path.join(JSON_DIR, f"{safe_item_id}.json")
-    return os.path.exists(file_path)
-
-
-def save_metadata(item_id, data):
-    """Save metadata as a JSON file only if it doesn't already exist."""
-    safe_item_id = item_id.replace("/", "_")
-    file_path = os.path.join(JSON_DIR, f"{safe_item_id}.json")
-
-    if os.path.exists(file_path):
-        tqdm.write(f"⚠️ Item {item_id} already exists in JSON folder. Skipping save.")
         return None
 
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+    # First, save locally as JSON
+    await save_metadata(item_id, metadata, cursor)
 
-    return file_path  # Return file path for counting
-
-
-def fetch_and_save(item_id):
-    """Fetch metadata and save it."""
-    metadata = fetch_item_metadata(item_id)
-    if metadata:
-        return save_metadata(item_id, metadata)
-    return None
+    # Return metadata and its item_id (to be used as _id in MongoDB)
+    return metadata, item_id
 
 
-def collect_data(limit=10, force_download=False):
-    """Ensure dataset consistency first, re-download missing JSON files, then fetch more items."""
+def get_mongo_count():
+    """Return the total count of items in MongoDB."""
 
-    cursor = None if force_download else load_cursor() or "*"
+    return collection.count_documents({})
 
-    if not os.listdir(JSON_DIR):  # If the JSON directory is empty
-        print("⚠️ Data folder is empty! Resetting cache...")
-        cache = {"downloaded_count": 0, "item_ids": []}  # ✅ Use list instead of set
-        save_cache(cache)  # Ensure it's saved immediately
-    saved_files = []
-    downloaded_ids = []  # Track only IDs of successfully downloaded files
 
-    # Load cache to see total downloaded count & stored IDs
+def get_local_count():
+    """Return the total count of JSON files stored locally."""
+    json_files = sum(len(files) for _, _, files in walk(JSON_DIR))
+
+    return json_files
+
+
+async def collect_data(limit: int | None = None, force_download: bool = False):
+    """Ensure dataset consistency, re-download missing JSON files, and fetch new items asynchronously."""
+    start_time = time.time()
+
     cache = load_cache()
-    cached_ids = set(cache.get("item_ids", []))  # Get stored IDs
-    existing_ids = load_existing_ids()
-    total_downloaded = cache["downloaded_count"]
+    cursor = None if force_download else load_cursor()
+    total_downloaded_session = 0
 
-    print("\n🛠️ **Pre-Download Check: Ensuring dataset consistency...**")
+    async with aiohttp.ClientSession() as session:
+        # await retry_failed_requests(session)  # Retry previous failures first
+        while cursor:
+            print(f"\n🔹 Processing batch from cursor `{cursor}`...")
+            print(
+                f"🔄 Retry Cursor → `{cursor}` (Restart will begin here if interrupted)\n"
+            )
 
-    items, cursor = fetch_item_ids(cursor)  # Now fetch_item_ids() always returns a list
-    if not items:  # Ensure items is not empty
-        print("✅ No new items found in API response. Stopping download.")
-        return
+            # Save last_cursor in cache before downloading
+            cache["last_cursor"] = cursor
+            save_cache(cache)
 
-    json_files = set(os.listdir(JSON_DIR))  # Check JSON files in storage
+            safe_cursor = cursor.replace("/", "_")
 
-    missing_log_entries = 0
-    missing_json_items = []
-    missing_in_log = []
+            cursor_cache_file = join(LOGS_DIR, f"{safe_cursor}_cache.json")
+            cursor_cache = {"downloaded_count": 0, "item_ids": []}
 
-    # Step 1: Fix missing logs & detect missing JSON files
-    all_logged_and_cached_ids = existing_ids | cached_ids  # Combine both sets
+            if exists(cursor_cache_file):
+                with open(cursor_cache_file, "r", encoding="utf-8") as f:
+                    cursor_cache = json.load(f)
 
-    for item_id in all_logged_and_cached_ids:
-        safe_item_id = item_id.replace("/", "_") + ".json"
-        json_exists = safe_item_id in json_files
-        log_exists = item_id in existing_ids
+            cursor_dir = join(JSON_DIR, safe_cursor)
+            makedirs(cursor_dir, exist_ok=True)
 
-        # Fix missing log entries (if JSON exists but ID is missing from log)
-        if json_exists and not log_exists:
-            missing_in_log.append(item_id)
-            downloaded_ids.append(item_id)
-            missing_log_entries += 1
+            if limit is not None and total_downloaded_session >= limit:
+                print(f"🛑 Download limit of {limit} reached. Stopping.")
+                break
 
-        # If JSON is missing but in cache/logs, mark it for re-download
-        if not json_exists and item_id in cached_ids:
-            missing_json_items.append(item_id)
+            # Fetch items, next cursor, and total items count
+            items, next_cursor, total_items_for_cursor = await fetch_item_ids(
+                session, cursor
+            )
 
-    total_log_count = len(existing_ids)  # Define total_log_count before condition
+            # Ensure `total_available_items` is updated, only if it increases
+            if total_items_for_cursor is not None:
+                if (
+                    cache.get("total_available_items") is None
+                    or cache["total_available_items"] < total_items_for_cursor
+                ):
+                    cache["total_available_items"] = total_items_for_cursor
+                    save_cache(cache)
+                    print(f"💾 Total available items → {total_items_for_cursor}")
 
-    # Display missing log entries if any exist
-    if missing_in_log:
-        print(f"🔸 **{len(missing_in_log)} missing item(s) found in `ids.log`.**")
-        print("❌ **Missing Log IDs:**")
-        for item_id in missing_in_log:
-            print(f"      - {item_id}")
-        print("\n🛠️ Fixing missing IDs in `ids.log`...\n")
+            # Handle API errors or empty results
+            if items is None:
+                print(f"⚠️ ERROR: `fetch_item_ids({cursor})` returned None. Stopping.")
+                break
 
-        save_ids_log(
-            set(missing_in_log) | (cached_ids - existing_ids)
-        )  # Ensure all types are sets
+            if not items:
+                print(f"⚠️ `{cursor}`: No items retrieved from API. Investigate why.")
+                cursor = next_cursor
+                continue
 
-        json_files = set(os.listdir(JSON_DIR))  # Re-check JSON files after re-download
-        total_json_count = len(json_files)
+            # Filter out already downloaded items
+            already_downloaded = set(cursor_cache.get("item_ids", []))
+            new_download_items = [
+                item["id"]
+                for item in items
+                if "id" in item and item["id"] not in already_downloaded
+            ]
 
-        print(f"✅ Finished re-adding {len(missing_in_log)} missing IDs to `ids.log`.")
-        print(f"📊 **Total items in `ids.log` now: {total_log_count}**\n")
-    else:
-        total_log_count = len(existing_ids)
-        print(f"✅ IDs log is ok. No new IDs to add. Skipping log update.")
-        print(f"📊 **Total items in `ids.log` now: {total_log_count}**\n")
+            print(f"🔍 After filtering, {len(new_download_items)} new items remain.")
 
-    # Step 2: Detect and print missing JSON files before downloading
-    if missing_json_items:
-        print(f"🔸 **{len(missing_json_items)} missing JSON file(s) detected.**")
-        print("❌ **Missing JSON file IDs:**")
-        for item_id in missing_json_items:
-            print(f"      - {item_id}")
-        print("\n🛠️ Re-downloading missing JSON files...")
+            if not new_download_items:
+                print(f"✅ `{cursor}`: All items already downloaded. Skipping.")
+                cursor = next_cursor
+                continue
 
-        with ThreadPoolExecutor(max_workers=5) as executor:
-            results = list(
-                tqdm(
-                    executor.map(fetch_and_save, missing_json_items),
-                    total=len(missing_json_items),
-                    desc="🔄 Fetching missing metadata...",
-                    ncols=80,
-                    ascii=" ░▒▓█",
+            if limit is not None:
+                remaining_limit = limit - total_downloaded_session
+                new_download_items = new_download_items[:remaining_limit]
+
+            print(f"🚀 `{cursor}`: Downloading {len(new_download_items)} new items...")
+
+            # Process items in batches to limit concurrent API requests
+            all_downloaded_metadata = []
+            all_downloaded_ids = []
+
+            for i in range(0, len(new_download_items), MAX_CONCURRENT_REQUESTS):
+                batch = new_download_items[i : i + MAX_CONCURRENT_REQUESTS]
+
+                # Create async tasks
+                tasks = [fetch_and_save(session, item_id, cursor) for item_id in batch]
+
+                results = await asyncio.gather(*tasks) or []
+
+                valid_results = [
+                    (meta, item_id)
+                    for res in results
+                    if res and isinstance(res, tuple)
+                    for meta, item_id in [res]
+                ]
+
+                metadata_batch = []
+                item_ids_batch = []
+
+                if valid_results:
+                    metadata_batch, item_ids_batch = zip(
+                        *valid_results
+                    )  # Unpack only if valid
+                    all_downloaded_metadata.extend(metadata_batch)
+                    all_downloaded_ids.extend(item_ids_batch)
+
+                # Ensure downloaded_ids always has a valid list
+                downloaded_ids = list(item_ids_batch) if item_ids_batch else []
+                total_downloaded_session += len(downloaded_ids)
+                cursor_cache["downloaded_count"] += len(downloaded_ids)
+                cursor_cache["item_ids"].extend(downloaded_ids)
+
+                with open(cursor_cache_file, "w", encoding="utf-8") as f:
+                    json.dump(cursor_cache, f, indent=4)
+
+                # Update global cache
+                cache["cursor_count"] += 1
+                cache["total_items"] += len(downloaded_ids)
+                save_cache(cache, new_cursor=cursor, next_cursor=next_cursor)
+
+            # Insert batch into MongoDB
+            if all_downloaded_metadata:
+                inserted_count = (
+                    insert_bulk_metadata(all_downloaded_metadata, all_downloaded_ids)
+                    or 0
                 )
-            )
+                duplicates = len(all_downloaded_metadata) - inserted_count
 
-        saved_files = [file for file in results if file]
+                if duplicates > 0:
+                    print(
+                        f"⚠️ Skipped {duplicates} duplicates. Inserted {inserted_count} new items."
+                    )
 
-        total_json_count = len(os.listdir(JSON_DIR))  # Updated JSON file count
-        print(f"✅ Finished re-downloading {len(saved_files)} JSON files.")
-        print(f"📊 **Total items in the `json` folder now: {total_json_count}**\n")
-    else:
-        total_json_count = len(json_files)
-        print(f"✅ JSON files are up-to-date. No missing files detected.")
-        print(f"📊 **Total items in the `json` folder now: {total_json_count}**\n")
-
-    # Step 3: Ask the user before downloading the first batch
-    first_run = True  # Track if it's the first batch
-
-    cursor = load_cursor()  # Load previous cursor if exists
-
-    while True:
-        if first_run and limit is not None:
-            user_input = (
-                input("\n🔹 Do you want to download more new items? (yes/no): ")
-                .strip()
-                .lower()
-            )
-            download_more = user_input in ["yes", "y"]
-            if not download_more:
                 print(
-                    f"✅ No new downloads requested. **Total items downloaded (tracked in cache): {total_downloaded}**\n"
+                    f"📊 MongoDB total: {get_mongo_count()} items | Local total: {get_local_count()} items"
                 )
-                return
 
-        print("\n🔍 Fetching new items...")
-
-        items, next_cursor = fetch_item_ids(cursor)  # Fetch new items using pagination
-        if not items:
-            print("✅ No more new items found. Stopping download.")
-            return
-        cursor = next_cursor  # ✅ Ensure cursor is updated
-        new_download_items = [
-            item["id"]
-            for item in items
-            if "id" in item
-            and item["id"] not in existing_ids
-            and item["id"] not in cached_ids
-        ]
-
-        if not new_download_items:
-            print("✅ No new items available for download.")
-            return
-
-        # Apply batch size: BATCH_SIZE for --all, otherwise use limit
-        batch_size = BATCH_SIZE if limit is None else limit
-        new_download_items = new_download_items[:batch_size]
-
-        print(
-            f"🚀 Fetching metadata for **{len(new_download_items)}** new items in parallel...\n"
-        )
-
-        # Step 4: Fetch new items in parallel
-        downloaded_ids = []  # Reset this list to track only new downloads
-
-        with ThreadPoolExecutor(max_workers=5) as executor:
-            results = list(
-                tqdm(
-                    executor.map(fetch_and_save, new_download_items),
-                    total=len(new_download_items),
-                    desc="🚀 Fetching new metadata...",
-                    ncols=80,
-                    ascii=" ░▒▓█",
-                )
+            print(
+                f"\n📝 Fetching metadata completed. {len(all_downloaded_metadata)} results retrieved."
             )
 
-        saved_files = [file for file in results if file]
-        downloaded_ids.extend(
-            [item_id for item_id, result in zip(new_download_items, results) if result]
-        )
+            if limit is not None and total_downloaded_session >= limit:
+                print(f"🛑 Download limit of {limit} reached. Stopping.")
+                break
 
-        # ✅ Log new downloaded IDs
-        save_ids_log(downloaded_ids)
+            if next_cursor:
+                print(f"💾 Cursor `{cursor}` processed. Next: `{next_cursor[:8]}...`")
+                cursor = next_cursor
+            else:
+                print(f"✅ `{cursor}`: No more items.")
+                break
 
-        # ✅ Step 5: Properly Update Cache
-        cache["downloaded_count"] += len(downloaded_ids)  # ✅ Increment count
-        cache["item_ids"] = list(
-            set(cache.get("item_ids", [])) | set(downloaded_ids)
-        )  # ✅ Merge and ensure a list
-        save_cache(cache)  # ✅ Save immediately after update
+    # Summary analysis
+    end_time = time.time()
+    execution_time = round(end_time - start_time, 2)
 
-        print(f"✅ Finished fetching metadata for **{len(saved_files)}** new items!")
-        print(
-            f"📊 **Total items downloaded so far (tracked in cache): {cache['downloaded_count']}**\n"
-        )
+    analysis_data = {
+        "total_cursors": cache["cursor_count"],
+        "total_items": cache["total_items"],
+        "execution_time_seconds": execution_time,
+    }
 
-        # ✅ Save the cursor after a successful batch fetch
-        if next_cursor:
-            save_cursor(next_cursor)  # ✅ Save the next cursor
-            cursor = next_cursor  # ✅ Update the cursor for the next fetch
-        else:
-            print("✅ No more items to fetch.")
-            return
+    with open(ANALYSIS_LOG, "w", encoding="utf-8") as f:
+        json.dump(analysis_data, f, indent=4)
+
+    print(f"\n📊 Execution summary saved. Time elapsed: {execution_time} seconds.")

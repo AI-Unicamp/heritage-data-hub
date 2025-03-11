@@ -1,139 +1,230 @@
+import asyncio
 import json
-import os
-import time
-import requests
+from os.path import exists, join
+
+import aiofiles
+import aiohttp
+from helpers.cache_handler import load_cache, save_cache
 from helpers.constants import (
-    CURSOR_FILE,
-    SEARCH_URL,
-    EXCLUDED_DC_TYPES,
-    RECORD_URL,
     API_PARAMS,
+    CACHE_FILE,
+    FAILED_REQUESTS_FILE,
+    LOGS_DIR,
+    RECORD_URL,
+    SEARCH_URL,
 )
-from requests.exceptions import RequestException, ChunkedEncodingError
 
 
-def save_cursor(cursor):
-    """Save the current cursor to a file so downloads can resume."""
-    if cursor and cursor not in ["*", None]:  # ✅ Ensure cursor is valid before saving
-        with open(CURSOR_FILE, "w", encoding="utf-8") as f:
-            json.dump({"cursor": cursor}, f)
-        print(f"💾 Cursor saved: {cursor}")  # ✅ Debugging
+async def save_failed_request(url, params, status="UNKNOWN", message="No details"):
+    """Save failed API requests for future retries."""
+    failed_request = {
+        "url": url,
+        "params": params,
+        "status": status,
+        "error_message": message,
+    }
+
+    if exists(FAILED_REQUESTS_FILE):
+        with open(FAILED_REQUESTS_FILE, "r", encoding="utf-8") as f:
+            failed_requests = json.load(f)
+    else:
+        failed_requests = []
+
+    failed_requests.append(failed_request)
+
+    with open(FAILED_REQUESTS_FILE, "w", encoding="utf-8") as f:
+        json.dump(failed_requests, f, indent=4)
+
+    print(f"💾 Failed request saved: {url} (Status: {status})")
+
+
+async def save_cursor(cursor):
+    """Save cursor inside cache.json instead of separate files."""
+    if cursor and cursor not in ["*", None]:
+        cache = load_cache()
+
+        # Update next cursor inside cache.json
+        cache["next_cursor"] = cursor
+        save_cache(cache)
+
+        print(f"💾 Next cursor saved: {cursor}")
     else:
         print("⚠️ Not saving cursor because it is empty or invalid.")
 
 
+async def save_log(cursor, message):
+    """Save logs in a separate file per cursor."""
+    log_file = join(LOGS_DIR, f"{cursor}.log")
+    async with aiofiles.open(log_file, "a", encoding="utf-8") as f:
+        await f.write(message + "\n")
+    print(message)
+
+
 def load_cursor():
-    """Load the last saved cursor from file and ensure it's valid."""
-    if os.path.exists(CURSOR_FILE):
+    """Load the last saved cursor from cache.json to resume from the correct position."""
+    if exists(CACHE_FILE):
         try:
-            with open(CURSOR_FILE, "r", encoding="utf-8") as f:
+            with open(CACHE_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                cursor = data.get("cursor")
-                if cursor and cursor not in ["*", None]:  # ✅ Ensure cursor is valid
-                    print(f"🔄 Resuming from cursor: {cursor}")
-                    return cursor
-                else:
-                    print("⚠️ Cursor file is empty or invalid. Resetting cursor.")
-                    return None  # ✅ Reset if the cursor is invalid
+
+                last_cursor = data.get("last_cursor")
+                next_cursor = data.get("next_cursor")
+
+                # Always start from last_cursor if it's valid
+                if last_cursor and last_cursor not in ["*", None]:
+                    print(f"🔄 Resuming from last processed cursor: `{last_cursor}`")
+
+                    return last_cursor
+
+                # Otherwise, fallback to next_cursor only if it's valid
+                if next_cursor and next_cursor not in ["*", None]:
+                    print(
+                        f"🔄 No pending work on last cursor. Moving to next: `{next_cursor}`"
+                    )
+
+                    return next_cursor
+
+                print("⚠️ No valid cursor found. Restarting fresh.")
+                return "*"
+
         except (json.JSONDecodeError, FileNotFoundError):
             print("⚠️ Cursor file corrupted. Resetting cursor.")
-            return None  # ✅ Reset cursor if corrupted
-    return None  # ✅ No cursor file exists yet, start fresh
+
+            return "*"
+
+    return "*"
 
 
-def fetch_with_retries(url, params, max_retries=5):
-    """Fetch API data with retry logic to handle rate limits and server failures."""
+async def fetch_with_retries(session, url, params, max_retries=5):
+    """Fetch API data asynchronously with retry logic to handle rate limits and server failures."""
     retries = 0
     while retries < max_retries:
         try:
-            response = requests.get(url, params=params, timeout=15)
-            if response.status_code == 200:
-                return response.json()
-            elif response.status_code in [429, 502, 503, 504, 520]:  # Handle failures
-                wait_time = 2**retries  # Exponential backoff
-                print(
-                    f"⚠️ API Error {response.status_code}. Retrying in {wait_time}s..."
-                )
-                time.sleep(wait_time)
-                retries += 1
-            else:
-                print(
-                    f"❌ API Error: {response.status_code} | Message: {response.text}"
-                )
-                return None  # Don't retry for other errors
-        except (RequestException, ChunkedEncodingError) as e:
+            async with session.get(url, params=params, timeout=15) as response:
+                if response.status == 200:
+                    return await response.json()
+
+                elif response.status in [
+                    429,
+                    502,
+                    503,
+                    504,
+                    520,
+                ]:
+                    wait_time = 2**retries  # Exponential backoff
+                    print(f"⚠️ API Error {response.status}. Retrying in {wait_time}s...")
+                    await asyncio.sleep(wait_time)
+                    retries += 1
+
+                else:  # Non-retryable API errors (e.g., 400, 404)
+                    error_message = await response.text()
+                    print(
+                        f"❌ API Error {response.status} | Message: {error_message} | Skipping item."
+                    )
+                    await save_failed_request(
+                        url, params, response.status, error_message
+                    )
+
+                    return None
+
+        except (
+            aiohttp.ClientError,
+            asyncio.TimeoutError,
+        ) as e:  # Handle network failures
             wait_time = 2**retries
             print(f"⚠️ Network Error: {e}. Retrying in {wait_time}s...")
-            time.sleep(wait_time)
+            await asyncio.sleep(wait_time)
             retries += 1
 
-    print("🚨 Max retries reached. Skipping request.")
+    print(f"🚨 Max retries ({max_retries}) reached. Skipping this item.")
+    await save_failed_request(url, params, "MAX_RETRIES", "Maximum retries reached")
+
     return None
 
 
-def find_excluded_dctype(data, path=""):
-    """Recursively search for excluded dcType values in the JSON data."""
-    if isinstance(data, dict):
-        for key, value in data.items():
-            new_path = f"{path}.{key}" if path else key
-
-            # Check if the current key is "dcType" and value contains an excluded type
-            if key == "dcType" and isinstance(value, dict):
-                dc_types = value.get("def", []) + value.get("en", [])
-                normalized_types = [dc_type.lower() for dc_type in dc_types]
-                if any(
-                    excluded_type.lower() in normalized_types
-                    for excluded_type in EXCLUDED_DC_TYPES
-                ):
-                    print(f"📰 Excluded type found in {new_path}: {dc_types}")
-                    return True
-
-            # Recursively search in nested structures
-            if find_excluded_dctype(value, new_path):
-                return True
-
-    elif isinstance(data, list):
-        for index, item in enumerate(data):
-            if find_excluded_dctype(item, f"{path}[{index}]"):
-                return True
-
-    return False
+# This is not running right now. To add this
+# add the following to the beggining of collect_data RequestException
+# in the downloader.py
+"""
+async with aiohttp.ClientSession() as session:
+    await retry_failed_requests(session)  # Retry previous failures first
+"""
 
 
-def fetch_item_ids(cursor=None):
-    """Fetch item IDs using cursor-based pagination with retries."""
-    if cursor is None:  # ✅ Always try to load the last saved cursor
+async def retry_failed_requests(session):
+    """Retry API requests that previously failed."""
+    if not exists(FAILED_REQUESTS_FILE):
+        print("✅ No failed requests to retry.")
+        return
+
+    async with aiofiles.open(FAILED_REQUESTS_FILE, "r", encoding="utf-8") as f:
+        lines = await f.readlines()
+
+    if not lines:
+        print("✅ No failed requests to retry.")
+        return
+
+    print(f"🔄 Retrying {len(lines)} failed requests...")
+
+    async with aiofiles.open(FAILED_REQUESTS_FILE, "w", encoding="utf-8") as f:
+        await f.write("")
+
+    for line in lines:
+        try:
+            failed_request = json.loads(line)
+            url, params = failed_request["url"], failed_request["params"]
+
+            print(f"🔄 Retrying: {url}")
+            data = await fetch_with_retries(session, url, params)
+            if data:
+                print(f"✅ Successfully retrieved: {url}")
+            else:
+                print(f"❌ Still failed: {url}, will re-log for next retry.")
+                await save_failed_request(url, params)
+
+        except json.JSONDecodeError:
+            print(f"⚠️ Skipping corrupted log entry: {line}")
+
+
+async def fetch_item_ids(session, cursor=None):
+    """Fetch item IDs using cursor-based pagination."""
+    if cursor is None:
         cursor = load_cursor()
 
-    print(f"🔍 Querying API with cursor: {cursor}")
+    print(f"🔍 Querying API with cursor: `{cursor}`")
 
-    # 🔥 Use the full API_PARAMS dictionary directly
-    params = API_PARAMS.copy()  # Make a copy to avoid mutating the global dictionary
+    params = API_PARAMS.copy()
     params["cursor"] = cursor
 
-    data = fetch_with_retries(SEARCH_URL, params)
+    data = await fetch_with_retries(session, SEARCH_URL, params)
     if not data:
         print("❌ API returned no valid response. Stopping download.")
-        return [], None
+        return [], None, None
 
     raw_items = data.get("items", [])
-    filtered_items = [item for item in raw_items if not find_excluded_dctype(item)]
     next_cursor = data.get("nextCursor")
+    total_items = data.get("totalResults", None)  # Get total available items
 
-    print(f"📊 API Returned: {len(filtered_items)} items")  # 🔍 Debugging line
+    print(f"📊 API Returned: {len(raw_items)} items for cursor `{cursor}`")
 
     if next_cursor:
-        print(f"💾 Saving next cursor: {next_cursor}")  # ✅ Debugging
-        save_cursor(next_cursor)  # ✅ Always save the next cursor
-    else:
-        print("✅ No more pages to fetch.")
+        await save_cursor(next_cursor)
 
-    return filtered_items, next_cursor
+    return raw_items, next_cursor, total_items
 
 
-def fetch_item_metadata(item_id):
-    """Fetch full metadata for a specific item with retry logic."""
+async def fetch_item_metadata(session, item_id, verbose=False):
+    """Fetch full metadata for a specific item asynchronously with retry logic."""
     url = f"{RECORD_URL}{item_id}.json"
     params = {"wskey": API_PARAMS["wskey"]}
 
-    return fetch_with_retries(url, params)
+    metadata = await fetch_with_retries(session, url, params)
+
+    if not metadata:
+        print(f"❌ ERROR: No metadata returned for `{item_id}`. Check API response.")
+    elif verbose:
+        print(
+            f"✅ Metadata successfully retrieved for `{item_id}`"
+        )  # Only prints if verbose=True is set
+
+    return metadata

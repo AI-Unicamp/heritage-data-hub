@@ -1,69 +1,63 @@
-import os
 import json
-from helpers.constants import LOG_FILE, JSON_DIR, CACHE_FILE
+from os import makedirs
+from os.path import exists, join
+
+import aiofiles
+from helpers.constants import CACHE_FILE, JSON_DIR, LOG_FILE, LOGS_DIR
+from tqdm import tqdm
 
 
-def load_existing_ids():
-    """Load existing item IDs from the log file."""
-    if os.path.exists(LOG_FILE):
-        with open(LOG_FILE, "r", encoding="utf-8") as f:
-            return set(line.strip() for line in f.readlines())
-    return set()
+async def save_metadata(item_id, data, cursor):
+    """Save metadata as a JSON file in the correct cursor folder asynchronously."""
+    safe_item_id = item_id.replace("/", "_")
+    safe_cursor = cursor.replace("/", "_")
 
+    cursor_folder = join(JSON_DIR, safe_cursor)
+    makedirs(cursor_folder, exist_ok=True)
 
-def save_ids_log(new_ids, is_precheck=False):
-    """Save new item IDs to the log file."""
-    existing_ids = load_existing_ids()
-    new_ids_to_add = [item_id for item_id in new_ids if item_id not in existing_ids]
+    file_path = join(cursor_folder, f"{safe_item_id}.json")
 
-    if new_ids_to_add:
-        with open(LOG_FILE, "a", encoding="utf-8") as f:
-            for item_id in new_ids_to_add:
-                f.write(f"{item_id}\n")
-
-        if not is_precheck:  # Only print when new items are added in a normal run
-            print(f"📝 Added {len(new_ids_to_add)} new item IDs to log.")
-
-    return len(new_ids_to_add)
-
-
-def save_metadata(item_id, data):
-    """Save metadata as a JSON file."""
-    safe_item_id = item_id.replace("/", "_") + ".json"
-    file_path = os.path.join(JSON_DIR, safe_item_id)
-
-    if os.path.exists(file_path):  # Prevent overwriting existing files
+    if exists(file_path):
+        tqdm.write(f"⚠️ Item {item_id} already exists. Skipping save.")
         return None
 
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+    try:
+        async with aiofiles.open(file_path, "w", encoding="utf-8") as f:
+            await f.write(json.dumps(data, indent=4, ensure_ascii=False))
 
-    return file_path
+        return file_path
+    except Exception as e:
+        print(f"❌ ERROR: Failed to save metadata for `{item_id}`. Exception: {e}")
+        return None
 
 
-def count_total_downloaded():
-    """Count the total number of item IDs in the log file."""
-    if os.path.exists(LOG_FILE):
-        with open(LOG_FILE, "r", encoding="utf-8") as f:
-            return len(f.readlines())
+async def count_total_downloaded():
+    """Asynchronously count the total number of item IDs in the log file."""
+    if exists(LOG_FILE):
+        count = 0
+        async with aiofiles.open(LOG_FILE, "r", encoding="utf-8") as f:
+            async for _ in f:  # Iterate over lines asynchronously
+                count += 1
+        return count
     return 0
 
 
-def load_cache():
-    """Load cache file to get the total downloaded count."""
-    if os.path.exists(CACHE_FILE):
-        with open(CACHE_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {"downloaded_count": 0}
+async def load_cache(cursor):
+    """Load the cache for a specific cursor asynchronously."""
+    cache_file = join(LOGS_DIR, f"{cursor}_cache.json")
+    if exists(cache_file):
+        async with aiofiles.open(cache_file, "r", encoding="utf-8") as f:
+            return json.loads(await f.read())
+    return {"downloaded_count": 0, "item_ids": []}
 
 
-def update_cache(new_files_count):
-    """Update the cache file with the new total count."""
-    cache = load_cache()
+async def update_cache(cursor, new_files_count):
+    """Update the cache file with the new total count asynchronously."""
+    cache = await load_cache(cursor)
     cache["downloaded_count"] += new_files_count  # Only update with NEW items
 
-    with open(CACHE_FILE, "w", encoding="utf-8") as f:
-        json.dump(cache, f, indent=4)
+    async with aiofiles.open(CACHE_FILE, "w", encoding="utf-8") as f:
+        await f.write(json.dumps(cache, indent=4))
 
     print(
         f"💾 Cache updated: Total downloaded count is now {cache['downloaded_count']}."
